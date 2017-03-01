@@ -15,7 +15,6 @@ A ProgramUnit contains the commands for controlling a robot. It is the main clas
 Type `end`. 
 
 
-
 ### <a name="Defining-a-Move"></a>Defining a Move
 
 ```
@@ -24,10 +23,10 @@ begin
  end
 
 ```
-It defines a command for moving forward the robot. The distance must be defined. The robot moves foward for a given distance in centimeter. The expected format is a double value. In our example, type: `25 `.
+It defines a command for moving forward the robot. `distance` must be defined. The robot moves foward for a given distance in centimeter. The expected format is a double value.
 Type `move (`. 
 
-Then, give the value, here: `25 `
+Then, give the value, here: `25 `.
 
 
 Type `)`. 
@@ -45,14 +44,16 @@ begin
  end
 
 ```
-It defines a command for rotating the robot. The rotation angle must be defined. The robot rotates following a given rotation angle in degree. The expected format is a double value. In our example, type: `-100 `.
+It defines a command for rotating the robot. `angle` must be defined. The robot rotates following a given rotation angle in degree. The expected format is a double value.
 Type `turn (`. 
 
-Then, give the value, here: `-100 `
+Then, give the value, here: `-100 `.
 
 
 Type `)`. 
 
 See also:<br/>
 [Defining a ProgramUnit](Defining-a-ProgramUnit)
+
+
 
