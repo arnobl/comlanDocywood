@@ -5,6 +5,8 @@ To run the tool to produce the tutorials for both Kompren and Robot unzip `binar
 java -jar java -jar docywood.core-0.0.1-SNAPSHOT.jar
 ```
 
+The generated tutorials are located in the folder `output`.
+
 
 The Kompren tutorials are available on the [official web page of the Kompren DSL](https://github.com/arnobl/kompren).
 
