@@ -1,3 +1,10 @@
+[Defining a TargetPlatform](#Defining-a-TargetPlatform)<br/>
+[Defining a Location](#Defining-a-Location)<br/>
+[Defining a IncludeDeclaration](#Defining-a-IncludeDeclaration)<br/>
+[Defining an Environment](#Defining-a-Environment)<br/>
+[Defining a Options](#Defining-a-Options)<br/>
+
+
 ### <a name="Defining-a-TargetPlatform"></a>Defining a TargetPlatform
 
 ```
