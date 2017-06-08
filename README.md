@@ -1,7 +1,7 @@
 
 The Kompren tutorials are available on the [official web page of the Kompren DSL](https://github.com/arnobl/kompren).
 
-The `binariesDemo.zip` archive contains the metamodel, the grammar and the input model used as input for the illustrative example and for Kompren. The generated tutorials for `Robot` are provided as follows:
+The generated tutorials for `Robot` are provided as follows:
 
 
 ### <a name="Defining-a-ProgramUnit"></a>Defining a ProgramUnit
