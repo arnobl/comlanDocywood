@@ -41,7 +41,7 @@ Then, give the value, here: `25 `.
 Type `)`. 
 
 See also:<br/>
-[Defining a ProgramUnit](Defining-a-ProgramUnit)
+[Defining a ProgramUnit](#Defining-a-ProgramUnit)
 
 
 
@@ -62,7 +62,7 @@ Then, give the value, here: `-100 `.
 Type `)`. 
 
 See also:<br/>
-[Defining a ProgramUnit](Defining-a-ProgramUnit)
+[Defining a ProgramUnit](#Defining-a-ProgramUnit)
 
 
 
