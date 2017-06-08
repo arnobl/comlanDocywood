@@ -40,7 +40,7 @@ Give the value, here: `[3.8.100,3.8.101)`.
 Type `}`. 
 
 See also:<br/>
-[Defining a TargetPlatform](Defining-a-TargetPlatform)
+[Defining a TargetPlatform](#Defining-a-TargetPlatform)
 
 
 ### <a name="Defining-a-IncludeDeclaration"></a>Defining a IncludeDeclaration
@@ -55,7 +55,7 @@ To include other target platform files if you decided to split your target platf
 
 
 See also:<br/>
-[Defining a TargetPlatform](Defining-a-TargetPlatform)
+[Defining a TargetPlatform](#Defining-a-TargetPlatform)
 
 
 ### <a name="Defining-a-Environment"></a>Defining an Environment
@@ -71,7 +71,7 @@ Then, give the value, here: `linux `, followed by possible other values: `, gtk`
 
 
 See also:<br/>
-[Defining a TargetPlatform](Defining-a-TargetPlatform)
+[Defining a TargetPlatform](#Defining-a-TargetPlatform)
 
 
 ### <a name="Defining-a-Options"></a>Defining a Options
@@ -94,4 +94,4 @@ Then, give the value, here: `source `. Other values can be added: ` requirements
 
 
 See also:<br/>
-[Defining a TargetPlatform](Defining-a-TargetPlatform)
+[Defining a TargetPlatform](#Defining-a-TargetPlatform)
