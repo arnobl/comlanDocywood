@@ -46,9 +46,8 @@ It can be a whole thing or a fragment. A fragment is a thing that can not be ins
 You can type `fragment`. 
 
 
-The name of the thing must be defined. The expected format is an identifier. In our example, type: `TestArrays4 `.
-<br>
-Type `{`. <br>
+The name of the thing must be defined. The expected format is an identifier. In our example, type: `TestArrays4 `.<br/>
+Type `{`.<br/>
 Type `}`. 
 
 ### <a name="Defining-a-includes-Thing"></a>Defining an includes Thing
@@ -61,13 +60,11 @@ thing TestArrays3 includes TestArrays4 {
 }
 ```
 Even though ThingML is not an OO language, and thus does not provide plain inheritance, it provides some basic mechanisms to improve the modularity/reusability of fragments of ThingML provides.
-A thing fragment can been seen as an interface or abstract class. Typically it declares some messages, but could also define any feature we can find in plan things. 
-<br>
-Type `includes`.<br>
+A thing fragment can been seen as an interface or abstract class. Typically it declares some messages, but could also define any feature we can find in plan things.<br/>
+Type `includes`.<br/>
 The name of the thing to include must be defined. The expected format is an identifier. 
-In our example, type: `TestArrays4`.
-<br>
-Type `{`. <br>
+In our example, type: `TestArrays4`.<br/>
+Type `{`.<br/>
 Type `}`. 
 
 
@@ -84,24 +81,17 @@ thing fragment TestArrays4 {
 ```
 Sub state machine contained in a state. Type `composite state`. 
 
-The name of the state machine must be defined. The expected format is an identifier. In our example, type: `c`.
-<br>
-Type `init`. 
-<br>
-The initial state must be defined. The expected format is an identifier. In our example, type: `s1`.
-<br>
+The name of the state machine must be defined. The expected format is an identifier. In our example, type: `c`.<br/>
+Type `init`.<br/>
+The initial state must be defined. The expected format is an identifier. In our example, type: `s1`.<br/>
 History states enter their initial state the first time they are activated, save their current state when exited and reenter that state when activated again. 
-Optionally, type `keeps history`. 
-<br>
-Type `{`. 
-<br>
+Optionally, type `keeps history`.<br/>
+Type `{`.<br/>
 Type `state`.
-The name of the state must be defined. The expected format is an identifier. In our example, type: `s1`.
-<br> 
-Type `{`. 
-<br>
+The name of the state must be defined. The expected format is an identifier. In our example, type: `s1`.<br/> 
+Type `{`.<br/>
+Type `}`.<br/>
 Type `}`. 
-<br>Type `}`. 
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)
@@ -120,17 +110,14 @@ thing fragment TestArrays4 {
 }
 
 ```
-All states (composite or not) can have entry actions executed when entering the state. 
-<br>
-Type `on entry`. 
-<br>
+All states (composite or not) can have entry actions executed when entering the state.<br/>
+Type `on entry`.<br/>
 The block of actions must be defined.
-Type `do`. 
-<br>
+Type `do`.<br/>
 Type `end`.
 
 See also:<br/>
-[Defining a Thing](#Defining-a-Thing)<br>
+[Defining a Thing](#Defining-a-Thing)<br/>
 [Defining a Composite State](#Defining-a-CompositeState)
 
 
@@ -147,17 +134,14 @@ thing fragment TestArrays4 {
 }
 
 ```
-All states (composite or not) can have exit actions executed when leaving the state. 
-<br>
-Type `on exit`. 
-<br>
+All states (composite or not) can have exit actions executed when leaving the state.<br/>
+Type `on exit`.<br/>
 The block of actions must be defined.
-Type `do`. 
-<br>
+Type `do`.<br/>
 Type `end`.
 
 See also:<br/>
-[Defining a Thing](#Defining-a-Thing)<br>
+[Defining a Thing](#Defining-a-Thing)<br/>
 [Defining a Composite State](#Defining-a-CompositeState)
 
 
@@ -171,14 +155,14 @@ thing fragment TestArrays4 {
 }
 
 ```
-State from which it can't be any outgoing transition.<br>
-Type `final`. <br>
-The state must be defined.<br>
-Type `}`.<br>
+State from which it can't be any outgoing transition.<br/>
+Type `final`.<br/>
+The state must be defined.<br/>
+Type `}`.<br/>
 Type `}`. 
 
 See also:<br/>
-[Defining a Thing](#Defining-a-Thing)
+[Defining a Thing](#Defining-a-Thing)<br/>
 [Defining a Composite State](#Defining-a-CompositeState)
 
 
@@ -197,16 +181,11 @@ thing fragment TestSession5 {
 ```
 State machines and composite states can contain one or more parallel regions. Each region executes independently from each other: they have their own initial, history and current state.
 By default a state machine and composite states define one region. Additional regions can be added.
-Type `region`. 
-<br>
-The name of the region must be defined. The expected format is an identifier. In our example, type: `R`.
-<br>
-Type `init`. 
-<br>
-The initial state must be defined. The expected format is an identifier. In our example, type: `s2`.
-<br>
-Type `{`. 
-<br>
+Type `region`.<br/>
+The name of the region must be defined. The expected format is an identifier. In our example, type: `R`.<br/>
+Type `init`.<br/>
+The initial state must be defined. The expected format is an identifier. In our example, type: `s2`.<br/>
+Type `{`.<br/>
 Type `}`. 
 
 See also:<br/>
@@ -245,14 +224,11 @@ thing fragment A {
  }
 
 ```
-Declare a variable for the whole instance of a thing. You can type `readonly`. 
-<br>
+Declare a variable for the whole instance of a thing. You can type `readonly`.<br/>
 Type `property`. 
 
-The name of the property must be defined. The expected format is an identifier. In our example, type: `c `.
-<br>
-Type `:`. 
-<br>
+The name of the property must be defined. The expected format is an identifier. In our example, type: `c `.<br/>
+Type `:`.<br/>
 The type of the property must be defined. The expected format is an identifier.
 Then, give the value, here: `String`.
 
@@ -302,10 +278,8 @@ You can type `optional`.
 
 Type `required port`. 
 
-The name of the port must be defined. The expected format is an identifier. In our example, type: `myPort`.
-<br>
-Type `{`. 
-<br>
+The name of the port must be defined. The expected format is an identifier. In our example, type: `myPort`.<br/>
+Type `{`.<br/>
 Type `}`. 
 
 See also:<br/>
@@ -324,8 +298,7 @@ Type `provided port`.
 
 Then, give the value, here: `p1 `.
 
-Type `{`. 
-<br>
+Type `{`.<br/>
 Type `}`. 
 
 See also:<br/>
@@ -442,12 +415,12 @@ thing fragment TestHistoryStatesWithStream {
 }
 
 ```
-Internal transitions can be used to implement event handlers on states which do not exit and reenter the state.<br>
-Type `internal`.<br>
-The event of the internal transition must be defined.<br>
-Actions of the transition can be defined. <br>
-Type `}`.<br>
-Type `}`.<br>
+Internal transitions can be used to implement event handlers on states which do not exit and reenter the state.<br/>
+Type `internal`.<br/>
+The event of the internal transition must be defined.<br/>
+Actions of the transition can be defined.<br/>
+Type `}`.<br/>
+Type `}`.<br/>
 
 
 See also:<br/>
@@ -471,10 +444,8 @@ The name of the message must be defined. The expected format is an identifier. I
 
 Type `(`. 
 
-The name of the parameter must be defined. The expected format is an identifier. In our example, type: `c `.
-<br>
-Type `:`. 
-<br>
+The name of the parameter must be defined. The expected format is an identifier. In our example, type: `c `.<br/>
+Type `:`.<br/>
 The type of the parameter must be defined. The expected format is an identifier.
 Then, give the value, here: `AnId `.
 
@@ -503,18 +474,18 @@ thing fragment TestHistoryStatesWithStream {
 
 ```
 Message reception event.
-The name of the port must be defined.<br>
-In our example, type: `p`.<br>
-Type `?`.<br>
-The name of the message must be defined<br>
-In our example, type: `mArray`.<br>
+The name of the port must be defined.<br/>
+In our example, type: `p`.<br/>
+Type `?`.<br/>
+The name of the message must be defined<br/>
+In our example, type: `mArray`.<br/>
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
 [Defining a Composite State](#Defining-a-CompositeState)<br/>
 [Defining a Required Port](#Defining-a-RequiredPort)<br/>
 [Defining a Transition](#Defining-a-Transition)<br/>
-[Defining an Event Transition](#Defining-a-event-Transition)<br/>
+[Defining an Event Transition](#Defining-a-event-Transition)
 
 
 ### <a name="Defining-a-SendAction"></a>Defining a Send Action
@@ -536,11 +507,11 @@ thing fragment TestArrays4 {
 
 ```
 Sending of a message on a port with given parameters.
-The name of the port must be defined.<br>
-In our example, type: `myPort`.<br>
-Type `!`.<br>
-The expression of the message must be defined.<br>
-In our example, type: `rep('\'A\'')`.<br>
+The name of the port must be defined.<br/>
+In our example, type: `myPort`.<br/>
+Type `!`.<br/>
+The expression of the message must be defined.<br/>
+In our example, type: `rep('\'A\'')`.<br/>
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
@@ -556,10 +527,8 @@ protocol UDP ;
 
 ```
 Protocol are used to named external components, that will not lead to code generation by compilers. They may however be used by plugins. Typically used for network transmissions. Additional information must be provided with annotation in most cases. `name` must be defined. The expected format is an identifier.
-Type `protocol`. 
-<br>
-Then, give the value, here: `UDP `.
-<br>
+Type `protocol`.<br/>
+Then, give the value, here: `UDP `.<br/>
 Type `;`. 
 
 
@@ -617,18 +586,14 @@ The name of the function must be defined. The expected format is an identifier. 
 
 Type `(`.
  
- Parameters of the function can be defined.<br>
-The name of the parameter must be defined. The expected format is an identifier. In our example, type: `tab `.
-<br>
-Type `:`. 
-<br>
+ Parameters of the function can be defined.<br/>
+The name of the parameter must be defined. The expected format is an identifier. In our example, type: `tab `.<br/>
+Type `:`.<br/>
 The type of the parameter must be defined. The expected format is an identifier.
 Then, give the value, here: `AnId `.
 
-Type `)`. 
-<br>
-Type `do`. 
-<br>
+Type `)`.<br/>
+Type `do`.<br/>
 Type `end`. 
 
 
@@ -655,10 +620,8 @@ object String ;
 
 ```
 Container for complex types such as classes, pointers, structs... `name` must be defined. The expected format is an identifier.
-Type `object`. 
-<br>
-Then, give the value, here: `String `.
-<br>
+Type `object`.<br/>
+Then, give the value, here: `String `.<br/>
 Type `;`. 
 
 
@@ -690,9 +653,8 @@ configuration HelloWorldCfg {
 ```
 Instance of a given thing. Type `instance`. 
 
-The name of the instance must be defined. The expected format is an identifier. In our example, type: `HelloWorldInstance `.
-<br>
-Type `:`. <br>
+The name of the instance must be defined. The expected format is an identifier. In our example, type: `HelloWorldInstance `.<br/>
+Type `:`.<br/>
 The type of the instance must be defined. The expected format is an identifier. In our example, type: `AnId`.
 
 
@@ -706,14 +668,10 @@ datatype Byte < 1 > ;
 ```
 Container for plateform types. (Allows to link types from differents plateforms). Type `datatype`. 
 
-The name of the primitive type must be defined. The expected format is an identifier. In our example, type: `Byte `.
-<br>
-Type `<`. 
-<br>
-The byte size must be defined. The expected format is an integer value. In our example, type: `1`.
-<br>
-Type `>`. 
-<br>
+The name of the primitive type must be defined. The expected format is an identifier. In our example, type: `Byte `.<br/>
+Type `<`.<br/>
+The byte size must be defined. The expected format is an integer value. In our example, type: `1`.<br/>
+Type `>`.<br/>
 Type `;`. 
 
 

@@ -37,8 +37,8 @@ Type `{`.
 The URI of the location must be defined. The expected format is a string that can be surrounded by either simple quotes ' or double quotes ". In our example, type: `"http://download.eclipse.org/releases/kepler" `.
 
 
-The Installable Units (IUs) your want to include in your target. This can be bundles or Eclipse features (it may end with feature.group).
-<br>An identifier can be defined. 
+The Installable Units (IUs) your want to include in your target. This can be bundles or Eclipse features (it may end with feature.group).<br/>
+An identifier can be defined. 
 In our example, type: `org.eclipse.pde `.
 
 
@@ -60,9 +60,9 @@ See also:<br/>
 target "Sample Target Platform" 
 include "base.tpd" 
 ```
-To include other target platform files if you decided to split your target platform definition into several files. This will still lead to the generation of a single .target file. `importURI` must be defined. The expected format is a string that can be surrounded by either simple quotes ' or double quotes ".
-<br>Type `include`. 
-<br>Then, give the value, here: `"base.tpd" `.
+To include other target platform files if you decided to split your target platform definition into several files. This will still lead to the generation of a single .target file. `importURI` must be defined. The expected format is a string that can be surrounded by either simple quotes ' or double quotes ".<br/>
+Type `include`.<br/>
+Then, give the value, here: `"base.tpd" `.
 
 
 See also:<br/>
@@ -75,9 +75,8 @@ See also:<br/>
 target "Sample Target Platform" 
 environment linux gtk 
 ```
-Defines the environment of your target platform. `env` must be defined. The expected format is a character sequence starting with an alpha (no space allowed).
-<br>Type `environment`. 
-<br>
+Defines the environment of your target platform. `env` must be defined. The expected format is a character sequence starting with an alpha (no space allowed).<br/>
+Type `environment`.<br/>
 Then, give the value, here: `linux `, followed by possible other values: `, gtk`
 
 
@@ -95,11 +94,11 @@ Some options about what should be retrieved from the p2 repository.
 Describes how the set of elements to add to this target is determined.
 The expected format is `requirements`, whether this target must have all required IUs of the selected IUs available and included in the target to resolve successfully. 
 If this option is true, the planner will be used to resolve otherwise the slicer is used. 
-The planner can describe any missing requirements as errors.
-<br>`allEnvironments`, whether this target should download and include environment (platform) specific units for all available platforms (vs. only the current target definition’s environment settings). Only supported by the slicer so requirements must not be used for this setting to be used.
-<br>`source`, whether this location should download and include source bundles for the selected units if the associated source is available in the repository.
-<br>`configurePhase`, whether this target should execute the configure phase after fetching the selected units.
-<br>Type `with`. 
+The planner can describe any missing requirements as errors.<br/>
+`allEnvironments`, whether this target should download and include environment (platform) specific units for all available platforms (vs. only the current target definition’s environment settings). Only supported by the slicer so requirements must not be used for this setting to be used.<br/>
+`source`, whether this location should download and include source bundles for the selected units if the associated source is available in the repository.<br/>
+`configurePhase`, whether this target should execute the configure phase after fetching the selected units.<br/>
+Type `with`. 
 
 Then, give the value, here: `source `. Other values can be added: ` requirements`.
 
