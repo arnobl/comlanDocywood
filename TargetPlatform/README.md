@@ -1,4 +1,4 @@
-#Documentation
+# Documentation
 
 [Defining a TargetPlatform](#Defining-a-TargetPlatform)<br/>
 [Defining a Location](#Defining-a-Location)<br/>
