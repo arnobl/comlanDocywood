@@ -190,7 +190,7 @@ Type `}`.")
 	
 	override ConfigurableCompletionProposal doCreateProposal(String proposal, StyledString displayString, Image image,
 		int replacementOffset, int replacementLength) {
-System.out.println(proposal)
+
 		val cc = new ConfigurableCompletionProposal(proposal, replacementOffset, replacementLength, proposal.length(),
 			image, displayString, null, values.get(proposal))
 		return cc;
