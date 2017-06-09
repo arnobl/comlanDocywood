@@ -1,3 +1,5 @@
+#Documentation
+
 [Defining a Thing](#Defining-a-Thing)<br/>
 [Defining an includes Thing](#Defining-a-includes-Thing)<br/>
 [Defining a Composite State](#Defining-a-CompositeState)<br/>
