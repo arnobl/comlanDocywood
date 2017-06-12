@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uaksAUt4EeegVo_aKAXReg">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ual6IEt4EeegVo_aKAXReg" name="The serie of documentations for TPD">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6QEt4EeegVo_aKAXReg" target="_ual6Ikt4EeegVo_aKAXReg" source="_ual6IUt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6QUt4EeegVo_aKAXReg" target="_ual6JEt4EeegVo_aKAXReg" source="_ual6Ikt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6Q0t4EeegVo_aKAXReg" target="_ual6KUt4EeegVo_aKAXReg" source="_ual6Ikt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6RUt4EeegVo_aKAXReg" target="_ual6Lkt4EeegVo_aKAXReg" source="_ual6Ikt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6R0t4EeegVo_aKAXReg" target="_ual6M0t4EeegVo_aKAXReg" source="_ual6Lkt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6S0t4EeegVo_aKAXReg" target="_ual6PEt4EeegVo_aKAXReg" source="_ual6Ikt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6TEt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg" source="_ual6JEt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6TUt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg" source="_ual6KUt4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6Tkt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6T0t4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg" source="_ual6M0t4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6UEt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6UUt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ual6Ukt4EeegVo_aKAXReg" target="_ual6P0t4EeegVo_aKAXReg" source="_ual6PEt4EeegVo_aKAXReg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_ual6IUt4EeegVo_aKAXReg" name="init" outgoing="_ual6QEt4EeegVo_aKAXReg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6Ikt4EeegVo_aKAXReg" name="Defining a TargetPlatform" incoming="_ual6QEt4EeegVo_aKAXReg" outgoing="_ual6QUt4EeegVo_aKAXReg _ual6Q0t4EeegVo_aKAXReg _ual6RUt4EeegVo_aKAXReg _ual6S0t4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6I0t4EeegVo_aKAXReg" name="targetplatform.TargetPlatform"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6JEt4EeegVo_aKAXReg" name="Defining a Options" incoming="_ual6QUt4EeegVo_aKAXReg" outgoing="_ual6TEt4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6JUt4EeegVo_aKAXReg" name="targetplatform.Options"/>
+      <inputValue xmi:id="_ual6Jkt4EeegVo_aKAXReg" name="targetplatform.TargetPlatform.contents"/>
+      <inputValue xmi:id="_ual6KEt4EeegVo_aKAXReg" name="targetplatform.Options.options"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6KUt4EeegVo_aKAXReg" name="Defining a Environment" incoming="_ual6Q0t4EeegVo_aKAXReg" outgoing="_ual6TUt4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6Kkt4EeegVo_aKAXReg" name="targetplatform.Environment"/>
+      <inputValue xmi:id="_ual6K0t4EeegVo_aKAXReg" name="targetplatform.TargetPlatform.contents"/>
+      <inputValue xmi:id="_ual6LUt4EeegVo_aKAXReg" name="targetplatform.Environment.env"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6Lkt4EeegVo_aKAXReg" name="Defining a Location" incoming="_ual6RUt4EeegVo_aKAXReg" outgoing="_ual6R0t4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6L0t4EeegVo_aKAXReg" name="targetplatform.Location"/>
+      <inputValue xmi:id="_ual6MEt4EeegVo_aKAXReg" name="targetplatform.TargetPlatform.contents"/>
+      <inputValue xmi:id="_ual6Mkt4EeegVo_aKAXReg" name="targetplatform.Location.ID"/>
+      <inputValue xmi:id="_ual6Nkt4EeegVo_aKAXReg" name="targetplatform.IU"/>
+      <inputValue xmi:id="_ual6N0t4EeegVo_aKAXReg" name="targetplatform.Location.ius"/>
+      <inputValue xmi:id="_ual6OUt4EeegVo_aKAXReg" name="targetplatform.IU.ID"/>
+      <inputValue xmi:id="_ual6O0t4EeegVo_aKAXReg" name="targetplatform.IU.version"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6M0t4EeegVo_aKAXReg" name="Defining a options Location" incoming="_ual6R0t4EeegVo_aKAXReg" outgoing="_ual6T0t4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6NEt4EeegVo_aKAXReg" name="targetplatform.Location.options"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ual6PEt4EeegVo_aKAXReg" name="Defining a IncludeDeclaration" incoming="_ual6S0t4EeegVo_aKAXReg" outgoing="_ual6Ukt4EeegVo_aKAXReg">
+      <inputValue xmi:id="_ual6PUt4EeegVo_aKAXReg" name="targetplatform.IncludeDeclaration"/>
+      <inputValue xmi:id="_ual6Pkt4EeegVo_aKAXReg" name="targetplatform.TargetPlatform.contents"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_ual6P0t4EeegVo_aKAXReg" name="end" incoming="_ual6TEt4EeegVo_aKAXReg _ual6TUt4EeegVo_aKAXReg _ual6Tkt4EeegVo_aKAXReg _ual6T0t4EeegVo_aKAXReg _ual6UEt4EeegVo_aKAXReg _ual6UUt4EeegVo_aKAXReg _ual6Ukt4EeegVo_aKAXReg"/>
+  </packagedElement>
+</uml:Model>

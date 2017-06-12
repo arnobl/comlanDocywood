@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_PrnNIEYOEeebLY9PnTEOMA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Prn0MEYOEeebLY9PnTEOMA" name="The serie of documentations for ThingML" node="_21e_EEYjEeehBqd0EPGJdw _t4p-QEY0EeehBqd0EPGJdw _P2hMMEwaEeeZwYTYjajg0Q _QStY8EwaEeeZwYTYjajg0Q">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCfkYOEeebLY9PnTEOMA" target="_Prn0MkYOEeebLY9PnTEOMA" source="_Prn0MUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCf0YOEeebLY9PnTEOMA" target="_Prn0NEYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCgEYOEeebLY9PnTEOMA" target="_Prn0N0YOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCgUYOEeebLY9PnTEOMA" target="_Prn0OkYOEeebLY9PnTEOMA" source="_Prn0N0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCgkYOEeebLY9PnTEOMA" target="_Prn0PUYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCg0YOEeebLY9PnTEOMA" target="_Prn0QEYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpChUYOEeebLY9PnTEOMA" target="_Prn0RkYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCh0YOEeebLY9PnTEOMA" target="_Prn0S0YOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCiUYOEeebLY9PnTEOMA" target="_Prn0UUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCikYOEeebLY9PnTEOMA" target="_Prn0U0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCi0YOEeebLY9PnTEOMA" target="_Prn0VkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCjEYOEeebLY9PnTEOMA" target="_Prn0WUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCjUYOEeebLY9PnTEOMA" target="_Prn0XEYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCjkYOEeebLY9PnTEOMA" target="_Prn0X0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCj0YOEeebLY9PnTEOMA" target="_Prn0YkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCkEYOEeebLY9PnTEOMA" target="_Prn0ZUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCkUYOEeebLY9PnTEOMA" target="_ProbQUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCkkYOEeebLY9PnTEOMA" target="_ProbREYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCk0YOEeebLY9PnTEOMA" target="_ProbR0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpClEYOEeebLY9PnTEOMA" target="_ProbSkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpClUYOEeebLY9PnTEOMA" target="_ProbTUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpClkYOEeebLY9PnTEOMA" target="_ProbUEYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCl0YOEeebLY9PnTEOMA" target="_ProbU0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCmEYOEeebLY9PnTEOMA" target="_ProbVkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCmUYOEeebLY9PnTEOMA" target="_ProbWUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCmkYOEeebLY9PnTEOMA" target="_ProbXEYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCm0YOEeebLY9PnTEOMA" target="_ProbX0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCnEYOEeebLY9PnTEOMA" target="_ProbYkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCnUYOEeebLY9PnTEOMA" target="_ProbZUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCnkYOEeebLY9PnTEOMA" target="_ProbaEYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrpCn0YOEeebLY9PnTEOMA" target="_Proba0YOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3gEYOEeebLY9PnTEOMA" target="_ProbbkYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3gUYOEeebLY9PnTEOMA" target="_ProbcUYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3gkYOEeebLY9PnTEOMA" target="_ProbdEYOEeebLY9PnTEOMA" source="_Prn0S0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3g0YOEeebLY9PnTEOMA" target="_Probd0YOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3hUYOEeebLY9PnTEOMA" target="_ProbfEYOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3hkYOEeebLY9PnTEOMA" target="_Probf0YOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3h0YOEeebLY9PnTEOMA" target="_ProbgkYOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3ikYOEeebLY9PnTEOMA" target="_ProbiUYOEeebLY9PnTEOMA" source="_ProbgkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3i0YOEeebLY9PnTEOMA" target="_ProbjEYOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3jUYOEeebLY9PnTEOMA" target="_ProbkUYOEeebLY9PnTEOMA" source="_ProbjEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3j0YOEeebLY9PnTEOMA" target="_PrpCVEYOEeebLY9PnTEOMA" source="_ProbkUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3kUYOEeebLY9PnTEOMA" target="_PrpCWUYOEeebLY9PnTEOMA" source="_ProbjEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3kkYOEeebLY9PnTEOMA" target="_PrpCXEYOEeebLY9PnTEOMA" source="_ProbjEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3l0YOEeebLY9PnTEOMA" target="_PrpCaUYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3mEYOEeebLY9PnTEOMA" target="_PrpCbEYOEeebLY9PnTEOMA" source="_Prn0MkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3mUYOEeebLY9PnTEOMA" target="_PrpCb0YOEeebLY9PnTEOMA" source="_PrpCbEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3mkYOEeebLY9PnTEOMA" target="_PrpCckYOEeebLY9PnTEOMA" source="_PrpCbEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3nEYOEeebLY9PnTEOMA" target="_PrpCd0YOEeebLY9PnTEOMA" source="_PrpCbEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3nUYOEeebLY9PnTEOMA" target="_PrpCekYOEeebLY9PnTEOMA" source="_PrpCbEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3nkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0NEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3n0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0OkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3oEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0PUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3oUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0QEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3okYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0RkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prq3o0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0UUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrekEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0U0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrekUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0VkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrekkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0WUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prrek0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0XEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrelEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0X0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrelUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0YkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrelkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Prn0ZUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prrel0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbQUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrremEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbREYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrremUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbR0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrremkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbSkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prrem0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbTUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrenEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbUEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrenUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbU0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrenkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbVkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prren0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbWUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreoEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbXEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreoUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbX0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreokYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbYkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prreo0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbZUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrepEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbaEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrepUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Proba0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrepkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbbkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prrep0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbcUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreqEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbdEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreqUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Probd0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreqkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbfEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prreq0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_Probf0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrerUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbgkYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrrerkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbiUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrresEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_ProbkUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrresUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCVEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreskYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCWUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prres0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCXEYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrretUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCaUYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrretkYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCb0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Prret0YOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCckYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreuEYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCd0YOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PrreuUYOEeebLY9PnTEOMA" target="_PrpCfUYOEeebLY9PnTEOMA" source="_PrpCekYOEeebLY9PnTEOMA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_D18ksEYkEeehBqd0EPGJdw" target="_21e_EEYjEeehBqd0EPGJdw" source="_Prn0RkYOEeebLY9PnTEOMA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_D19y0EYkEeehBqd0EPGJdw" name="Defining a Thing_To_Defining a Function_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_D1_A8EYkEeehBqd0EPGJdw" name="Defining a Thing_To_Defining a Function_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gHtloEYuEeehBqd0EPGJdw" target="_PrpCfUYOEeebLY9PnTEOMA" source="_t4p-QEY0EeehBqd0EPGJdw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_gHuMsEYuEeehBqd0EPGJdw" name="Defining a Function_To_end_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_gHuMsUYuEeehBqd0EPGJdw" name="Defining a Function_To_end_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zf23UEY0EeehBqd0EPGJdw" target="_t4p-QEY0EeehBqd0EPGJdw" source="_21e_EEYjEeehBqd0EPGJdw">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_zf3eYEY0EeehBqd0EPGJdw" name="Defining a Function_To_Defining a LoopAction_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_zf3eYUY0EeehBqd0EPGJdw" name="Defining a Function_To_Defining a LoopAction_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5683UEwaEeeZwYTYjajg0Q" target="_QStY8EwaEeeZwYTYjajg0Q" source="_ProbjEYOEeebLY9PnTEOMA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_569eYEwaEeeZwYTYjajg0Q" name="Defining a CompositeState_To_Defining a OnExit CompositeState_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_56-FcEwaEeeZwYTYjajg0Q" name="Defining a CompositeState_To_Defining a OnExit CompositeState_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6nE9gEwaEeeZwYTYjajg0Q" target="_P2hMMEwaEeeZwYTYjajg0Q" source="_ProbjEYOEeebLY9PnTEOMA">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_6nFkkEwaEeeZwYTYjajg0Q" name="Defining a CompositeState_To_Defining a OnEntry CompositeState_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_6nGLoEwaEeeZwYTYjajg0Q" name="Defining a CompositeState_To_Defining a OnEntry CompositeState_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__qmhwEwaEeeZwYTYjajg0Q" target="_PrpCfUYOEeebLY9PnTEOMA" source="_P2hMMEwaEeeZwYTYjajg0Q">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="__qnI0EwaEeeZwYTYjajg0Q" name="Defining a OnEntry CompositeState_To_end_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="__qnI0UwaEeeZwYTYjajg0Q" name="Defining a OnEntry CompositeState_To_end_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AfgwgEwbEeeZwYTYjajg0Q" target="_PrpCfUYOEeebLY9PnTEOMA" source="_QStY8EwaEeeZwYTYjajg0Q">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_AfgwgUwbEeeZwYTYjajg0Q" name="Defining a OnExit CompositeState_To_end_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_AfgwgkwbEeeZwYTYjajg0Q" name="Defining a OnExit CompositeState_To_end_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_Prn0MUYOEeebLY9PnTEOMA" name="init" outgoing="_PrpCfkYOEeebLY9PnTEOMA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0MkYOEeebLY9PnTEOMA" name="Defining a ThingMLModel" incoming="_PrpCfkYOEeebLY9PnTEOMA" outgoing="_PrpCf0YOEeebLY9PnTEOMA _PrpCgEYOEeebLY9PnTEOMA _PrpCgkYOEeebLY9PnTEOMA _PrpCg0YOEeebLY9PnTEOMA _PrpChUYOEeebLY9PnTEOMA _Prq3l0YOEeebLY9PnTEOMA _Prq3mEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0M0YOEeebLY9PnTEOMA" name="thingML.ThingMLModel"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0NEYOEeebLY9PnTEOMA" name="Defining a Import" incoming="_PrpCf0YOEeebLY9PnTEOMA" outgoing="_Prq3nkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0NUYOEeebLY9PnTEOMA" name="thingML.Import"/>
+      <inputValue xmi:id="_Prn0NkYOEeebLY9PnTEOMA" name="thingML.ThingMLModel.imports"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0N0YOEeebLY9PnTEOMA" name="Defining a PrimitiveType" incoming="_PrpCgEYOEeebLY9PnTEOMA" outgoing="_PrpCgUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0OEYOEeebLY9PnTEOMA" name="thingML.PrimitiveType"/>
+      <inputValue xmi:id="_Prn0OUYOEeebLY9PnTEOMA" name="thingML.ThingMLModel.types"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0OkYOEeebLY9PnTEOMA" name="Defining a PlatformAnnotation" incoming="_PrpCgUYOEeebLY9PnTEOMA" outgoing="_Prq3n0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0O0YOEeebLY9PnTEOMA" name="thingML.PlatformAnnotation"/>
+      <inputValue xmi:id="_Prn0PEYOEeebLY9PnTEOMA" name="thingML.AnnotatedElement.annotations"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0PUYOEeebLY9PnTEOMA" name="Defining a ObjectType" incoming="_PrpCgkYOEeebLY9PnTEOMA" outgoing="_Prq3oEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0PkYOEeebLY9PnTEOMA" name="thingML.ObjectType"/>
+      <inputValue xmi:id="_Prn0P0YOEeebLY9PnTEOMA" name="thingML.ThingMLModel.types"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0QEYOEeebLY9PnTEOMA" name="Defining a Enumeration" incoming="_PrpCg0YOEeebLY9PnTEOMA" outgoing="_Prq3oUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0QUYOEeebLY9PnTEOMA" name="thingML.Enumeration"/>
+      <inputValue xmi:id="_Prn0QkYOEeebLY9PnTEOMA" name="thingML.ThingMLModel.types"/>
+      <inputValue xmi:id="_Prn0RUYOEeebLY9PnTEOMA" name="thingML.Enumeration.literals"/>
+      <inputValue xmi:id="_uz-r8EYREeehBqd0EPGJdw" name="thingML.EnumerationLiteral"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0RkYOEeebLY9PnTEOMA" name="Defining a Thing" incoming="_PrpChUYOEeebLY9PnTEOMA" outgoing="_PrpCh0YOEeebLY9PnTEOMA _Prq3g0YOEeebLY9PnTEOMA _Prq3hUYOEeebLY9PnTEOMA _Prq3hkYOEeebLY9PnTEOMA _Prq3h0YOEeebLY9PnTEOMA _Prq3i0YOEeebLY9PnTEOMA _Prq3okYOEeebLY9PnTEOMA _D18ksEYkEeehBqd0EPGJdw">
+      <inputValue xmi:id="_Prn0R0YOEeebLY9PnTEOMA" name="thingML.Thing"/>
+      <inputValue xmi:id="_Prn0SEYOEeebLY9PnTEOMA" name="thingML.ThingMLModel.types"/>
+      <inputValue xmi:id="_Prn0SkYOEeebLY9PnTEOMA" name="thingML.Thing.fragment"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0S0YOEeebLY9PnTEOMA" name="Defining a Message" incoming="_PrpCh0YOEeebLY9PnTEOMA" outgoing="_Prq3gEYOEeebLY9PnTEOMA _Prq3gkYOEeebLY9PnTEOMA _Prq3gUYOEeebLY9PnTEOMA _PrpCn0YOEeebLY9PnTEOMA _PrpCnkYOEeebLY9PnTEOMA _PrpCnUYOEeebLY9PnTEOMA _PrpCnEYOEeebLY9PnTEOMA _PrpCm0YOEeebLY9PnTEOMA _PrpCmkYOEeebLY9PnTEOMA _PrpCmUYOEeebLY9PnTEOMA _PrpCmEYOEeebLY9PnTEOMA _PrpCl0YOEeebLY9PnTEOMA _PrpClkYOEeebLY9PnTEOMA _PrpClUYOEeebLY9PnTEOMA _PrpClEYOEeebLY9PnTEOMA _PrpCk0YOEeebLY9PnTEOMA _PrpCkkYOEeebLY9PnTEOMA _PrpCkUYOEeebLY9PnTEOMA _PrpCkEYOEeebLY9PnTEOMA _PrpCj0YOEeebLY9PnTEOMA _PrpCjkYOEeebLY9PnTEOMA _PrpCjUYOEeebLY9PnTEOMA _PrpCjEYOEeebLY9PnTEOMA _PrpCi0YOEeebLY9PnTEOMA _PrpCikYOEeebLY9PnTEOMA _PrpCiUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0TEYOEeebLY9PnTEOMA" name="thingML.Message"/>
+      <inputValue xmi:id="_Prn0TUYOEeebLY9PnTEOMA" name="thingML.Thing.messages"/>
+      <inputValue xmi:id="_Prn0T0YOEeebLY9PnTEOMA" name="thingML.Parameter"/>
+      <inputValue xmi:id="_Prn0UEYOEeebLY9PnTEOMA" name="thingML.Message.parameters"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0UUYOEeebLY9PnTEOMA" name="Defining a isArray TypeRef" incoming="_PrpCiUYOEeebLY9PnTEOMA" outgoing="_Prq3o0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0UkYOEeebLY9PnTEOMA" name="thingML.TypeRef.isArray"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0U0YOEeebLY9PnTEOMA" name="Defining a ExternExpression" incoming="_PrpCikYOEeebLY9PnTEOMA" outgoing="_PrrekEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0VEYOEeebLY9PnTEOMA" name="thingML.ExternExpression"/>
+      <inputValue xmi:id="_Prn0VUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0VkYOEeebLY9PnTEOMA" name="Defining a EnumLiteralRef" incoming="_PrpCi0YOEeebLY9PnTEOMA" outgoing="_PrrekUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0V0YOEeebLY9PnTEOMA" name="thingML.EnumLiteralRef"/>
+      <inputValue xmi:id="_Prn0WEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0WUYOEeebLY9PnTEOMA" name="Defining a IntegerLiteral" incoming="_PrpCjEYOEeebLY9PnTEOMA" outgoing="_PrrekkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0WkYOEeebLY9PnTEOMA" name="thingML.IntegerLiteral"/>
+      <inputValue xmi:id="_Prn0W0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0XEYOEeebLY9PnTEOMA" name="Defining a BooleanLiteral" incoming="_PrpCjUYOEeebLY9PnTEOMA" outgoing="_Prrek0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0XUYOEeebLY9PnTEOMA" name="thingML.BooleanLiteral"/>
+      <inputValue xmi:id="_Prn0XkYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0X0YOEeebLY9PnTEOMA" name="Defining a StringLiteral" incoming="_PrpCjkYOEeebLY9PnTEOMA" outgoing="_PrrelEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0YEYOEeebLY9PnTEOMA" name="thingML.StringLiteral"/>
+      <inputValue xmi:id="_Prn0YUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0YkYOEeebLY9PnTEOMA" name="Defining a DoubleLiteral" incoming="_PrpCj0YOEeebLY9PnTEOMA" outgoing="_PrrelUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0Y0YOEeebLY9PnTEOMA" name="thingML.DoubleLiteral"/>
+      <inputValue xmi:id="_Prn0ZEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Prn0ZUYOEeebLY9PnTEOMA" name="Defining a PropertyReference" incoming="_PrpCkEYOEeebLY9PnTEOMA" outgoing="_PrrelkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Prn0ZkYOEeebLY9PnTEOMA" name="thingML.PropertyReference"/>
+      <inputValue xmi:id="_ProbQEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbQUYOEeebLY9PnTEOMA" name="Defining a Reference" incoming="_PrpCkUYOEeebLY9PnTEOMA" outgoing="_Prrel0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbQkYOEeebLY9PnTEOMA" name="thingML.Reference"/>
+      <inputValue xmi:id="_ProbQ0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbREYOEeebLY9PnTEOMA" name="Defining a FunctionCallExpression" incoming="_PrpCkkYOEeebLY9PnTEOMA" outgoing="_PrremEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbRUYOEeebLY9PnTEOMA" name="thingML.FunctionCallExpression"/>
+      <inputValue xmi:id="_ProbRkYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbR0YOEeebLY9PnTEOMA" name="Defining a OrExpression" incoming="_PrpCk0YOEeebLY9PnTEOMA" outgoing="_PrremUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbSEYOEeebLY9PnTEOMA" name="thingML.OrExpression"/>
+      <inputValue xmi:id="_ProbSUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbSkYOEeebLY9PnTEOMA" name="Defining a AndExpression" incoming="_PrpClEYOEeebLY9PnTEOMA" outgoing="_PrremkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbS0YOEeebLY9PnTEOMA" name="thingML.AndExpression"/>
+      <inputValue xmi:id="_ProbTEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbTUYOEeebLY9PnTEOMA" name="Defining a EqualsExpression" incoming="_PrpClUYOEeebLY9PnTEOMA" outgoing="_Prrem0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbTkYOEeebLY9PnTEOMA" name="thingML.EqualsExpression"/>
+      <inputValue xmi:id="_ProbT0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbUEYOEeebLY9PnTEOMA" name="Defining a NotEqualsExpression" incoming="_PrpClkYOEeebLY9PnTEOMA" outgoing="_PrrenEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbUUYOEeebLY9PnTEOMA" name="thingML.NotEqualsExpression"/>
+      <inputValue xmi:id="_ProbUkYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbU0YOEeebLY9PnTEOMA" name="Defining a GreaterExpression" incoming="_PrpCl0YOEeebLY9PnTEOMA" outgoing="_PrrenUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbVEYOEeebLY9PnTEOMA" name="thingML.GreaterExpression"/>
+      <inputValue xmi:id="_ProbVUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbVkYOEeebLY9PnTEOMA" name="Defining a LowerExpression" incoming="_PrpCmEYOEeebLY9PnTEOMA" outgoing="_PrrenkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbV0YOEeebLY9PnTEOMA" name="thingML.LowerExpression"/>
+      <inputValue xmi:id="_ProbWEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbWUYOEeebLY9PnTEOMA" name="Defining a GreaterOrEqualExpression" incoming="_PrpCmUYOEeebLY9PnTEOMA" outgoing="_Prren0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbWkYOEeebLY9PnTEOMA" name="thingML.GreaterOrEqualExpression"/>
+      <inputValue xmi:id="_ProbW0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbXEYOEeebLY9PnTEOMA" name="Defining a LowerOrEqualExpression" incoming="_PrpCmkYOEeebLY9PnTEOMA" outgoing="_PrreoEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbXUYOEeebLY9PnTEOMA" name="thingML.LowerOrEqualExpression"/>
+      <inputValue xmi:id="_ProbXkYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbX0YOEeebLY9PnTEOMA" name="Defining a PlusExpression" incoming="_PrpCm0YOEeebLY9PnTEOMA" outgoing="_PrreoUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbYEYOEeebLY9PnTEOMA" name="thingML.PlusExpression"/>
+      <inputValue xmi:id="_ProbYUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbYkYOEeebLY9PnTEOMA" name="Defining a MinusExpression" incoming="_PrpCnEYOEeebLY9PnTEOMA" outgoing="_PrreokYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbY0YOEeebLY9PnTEOMA" name="thingML.MinusExpression"/>
+      <inputValue xmi:id="_ProbZEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbZUYOEeebLY9PnTEOMA" name="Defining a TimesExpression" incoming="_PrpCnUYOEeebLY9PnTEOMA" outgoing="_Prreo0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbZkYOEeebLY9PnTEOMA" name="thingML.TimesExpression"/>
+      <inputValue xmi:id="_ProbZ0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbaEYOEeebLY9PnTEOMA" name="Defining a DivExpression" incoming="_PrpCnkYOEeebLY9PnTEOMA" outgoing="_PrrepEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbaUYOEeebLY9PnTEOMA" name="thingML.DivExpression"/>
+      <inputValue xmi:id="_ProbakYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Proba0YOEeebLY9PnTEOMA" name="Defining a ModExpression" incoming="_PrpCn0YOEeebLY9PnTEOMA" outgoing="_PrrepUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbbEYOEeebLY9PnTEOMA" name="thingML.ModExpression"/>
+      <inputValue xmi:id="_ProbbUYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbbkYOEeebLY9PnTEOMA" name="Defining a NotExpression" incoming="_Prq3gEYOEeebLY9PnTEOMA" outgoing="_PrrepkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Probb0YOEeebLY9PnTEOMA" name="thingML.NotExpression"/>
+      <inputValue xmi:id="_ProbcEYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbcUYOEeebLY9PnTEOMA" name="Defining a UnaryMinus" incoming="_Prq3gUYOEeebLY9PnTEOMA" outgoing="_Prrep0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbckYOEeebLY9PnTEOMA" name="thingML.UnaryMinus"/>
+      <inputValue xmi:id="_Probc0YOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbdEYOEeebLY9PnTEOMA" name="Defining a ArrayIndex" incoming="_Prq3gkYOEeebLY9PnTEOMA" outgoing="_PrreqEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbdUYOEeebLY9PnTEOMA" name="thingML.ArrayIndex"/>
+      <inputValue xmi:id="_ProbdkYOEeebLY9PnTEOMA" name="thingML.TypeRef.cardinality"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Probd0YOEeebLY9PnTEOMA" name="Defining a RequiredPort" incoming="_Prq3g0YOEeebLY9PnTEOMA" outgoing="_PrreqUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbeEYOEeebLY9PnTEOMA" name="thingML.RequiredPort"/>
+      <inputValue xmi:id="_ProbeUYOEeebLY9PnTEOMA" name="thingML.Thing.ports"/>
+      <inputValue xmi:id="_Probe0YOEeebLY9PnTEOMA" name="thingML.RequiredPort.optional"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbfEYOEeebLY9PnTEOMA" name="Defining a ProvidedPort" incoming="_Prq3hUYOEeebLY9PnTEOMA" outgoing="_PrreqkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbfUYOEeebLY9PnTEOMA" name="thingML.ProvidedPort"/>
+      <inputValue xmi:id="_ProbfkYOEeebLY9PnTEOMA" name="thingML.Thing.ports"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Probf0YOEeebLY9PnTEOMA" name="Defining a InternalPort" incoming="_Prq3hkYOEeebLY9PnTEOMA" outgoing="_Prreq0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbgEYOEeebLY9PnTEOMA" name="thingML.InternalPort"/>
+      <inputValue xmi:id="_ProbgUYOEeebLY9PnTEOMA" name="thingML.Thing.ports"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbgkYOEeebLY9PnTEOMA" name="Defining a Property" incoming="_Prq3h0YOEeebLY9PnTEOMA" outgoing="_PrrerUYOEeebLY9PnTEOMA _Prq3ikYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_Probg0YOEeebLY9PnTEOMA" name="thingML.Property"/>
+      <inputValue xmi:id="_ProbhEYOEeebLY9PnTEOMA" name="thingML.Thing.properties"/>
+      <inputValue xmi:id="_ProbhkYOEeebLY9PnTEOMA" name="thingML.Property.changeable"/>
+      <inputValue xmi:id="_ProbiEYOEeebLY9PnTEOMA" name="thingML.Property.name"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbiUYOEeebLY9PnTEOMA" name="Defining a PropertyAssign" incoming="_Prq3ikYOEeebLY9PnTEOMA" outgoing="_PrrerkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_ProbikYOEeebLY9PnTEOMA" name="thingML.PropertyAssign"/>
+      <inputValue xmi:id="_Probi0YOEeebLY9PnTEOMA" name="thingML.Thing.assign"/>
+      <inputValue xmi:id="_6FAvwEYbEeehBqd0EPGJdw" name="thingML.PropertyAssign.property"/>
+      <inputValue xmi:id="_6q2nwEYbEeehBqd0EPGJdw" name="thingML.PropertyAssign.init"/>
+      <inputValue xmi:id="_CAexgEYcEeehBqd0EPGJdw" name="thingML.PropertyAssign.index"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbjEYOEeebLY9PnTEOMA" name="Defining a CompositeState" incoming="_Prq3i0YOEeebLY9PnTEOMA" outgoing="_Prq3jUYOEeebLY9PnTEOMA _Prq3kkYOEeebLY9PnTEOMA _Prq3kUYOEeebLY9PnTEOMA _5683UEwaEeeZwYTYjajg0Q _6nE9gEwaEeeZwYTYjajg0Q">
+      <inputValue xmi:id="_ProbjUYOEeebLY9PnTEOMA" name="thingML.CompositeState"/>
+      <inputValue xmi:id="_ProbjkYOEeebLY9PnTEOMA" name="thingML.Thing.behaviour"/>
+      <inputValue xmi:id="_ZFamYEYUEeehBqd0EPGJdw" name="thingML.State"/>
+      <inputValue xmi:id="_aPJOkEYUEeehBqd0EPGJdw" name="thingML.CompositeState.substate"/>
+      <inputValue xmi:id="_ProbkEYOEeebLY9PnTEOMA" name="thingML.CompositeState.history"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ProbkUYOEeebLY9PnTEOMA" name="Defining a InternalTransition" incoming="_Prq3jUYOEeebLY9PnTEOMA" outgoing="_Prq3j0YOEeebLY9PnTEOMA _PrresEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCUEYOEeebLY9PnTEOMA" name="thingML.InternalTransition"/>
+      <inputValue xmi:id="_PrpCUUYOEeebLY9PnTEOMA" name="thingML.State.internal"/>
+      <inputValue xmi:id="_PrpCU0YOEeebLY9PnTEOMA" name="thingML.Handler.name"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCVEYOEeebLY9PnTEOMA" name="Defining a ReceiveMessage" incoming="_Prq3j0YOEeebLY9PnTEOMA" outgoing="_PrresUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCVUYOEeebLY9PnTEOMA" name="thingML.ReceiveMessage"/>
+      <inputValue xmi:id="_PrpCVkYOEeebLY9PnTEOMA" name="thingML.Handler.event"/>
+      <inputValue xmi:id="_PrpCWEYOEeebLY9PnTEOMA" name="thingML.ReceiveMessage.name"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCWUYOEeebLY9PnTEOMA" name="Defining a Transition" incoming="_Prq3kUYOEeebLY9PnTEOMA" outgoing="_PrreskYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCWkYOEeebLY9PnTEOMA" name="thingML.Transition"/>
+      <inputValue xmi:id="_PrpCW0YOEeebLY9PnTEOMA" name="thingML.State.outgoing"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCXEYOEeebLY9PnTEOMA" name="Defining a ParallelRegion" incoming="_Prq3kkYOEeebLY9PnTEOMA" outgoing="_Prres0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCXUYOEeebLY9PnTEOMA" name="thingML.ParallelRegion"/>
+      <inputValue xmi:id="_PrpCXkYOEeebLY9PnTEOMA" name="thingML.CompositeState.region"/>
+      <inputValue xmi:id="_PrpCYEYOEeebLY9PnTEOMA" name="thingML.ParallelRegion.history"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCaUYOEeebLY9PnTEOMA" name="Defining a Protocol" incoming="_Prq3l0YOEeebLY9PnTEOMA" outgoing="_PrretUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCakYOEeebLY9PnTEOMA" name="thingML.Protocol"/>
+      <inputValue xmi:id="_PrpCa0YOEeebLY9PnTEOMA" name="thingML.ThingMLModel.protocols"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCbEYOEeebLY9PnTEOMA" name="Defining a Configuration" incoming="_Prq3mEYOEeebLY9PnTEOMA" outgoing="_Prq3mUYOEeebLY9PnTEOMA _Prq3mkYOEeebLY9PnTEOMA _Prq3nEYOEeebLY9PnTEOMA _Prq3nUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCbUYOEeebLY9PnTEOMA" name="thingML.Configuration"/>
+      <inputValue xmi:id="_PrpCbkYOEeebLY9PnTEOMA" name="thingML.ThingMLModel.configs"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCb0YOEeebLY9PnTEOMA" name="Defining a Instance" incoming="_Prq3mUYOEeebLY9PnTEOMA" outgoing="_PrretkYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCcEYOEeebLY9PnTEOMA" name="thingML.Instance"/>
+      <inputValue xmi:id="_PrpCcUYOEeebLY9PnTEOMA" name="thingML.Configuration.instances"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCckYOEeebLY9PnTEOMA" name="Defining a Connector" incoming="_Prq3mkYOEeebLY9PnTEOMA" outgoing="_Prret0YOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCc0YOEeebLY9PnTEOMA" name="thingML.Connector"/>
+      <inputValue xmi:id="_PrpCdEYOEeebLY9PnTEOMA" name="thingML.Configuration.connectors"/>
+      <inputValue xmi:id="_PrpCdkYOEeebLY9PnTEOMA" name="thingML.AbstractConnector.name"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCd0YOEeebLY9PnTEOMA" name="Defining a ExternalConnector" incoming="_Prq3nEYOEeebLY9PnTEOMA" outgoing="_PrreuEYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCeEYOEeebLY9PnTEOMA" name="thingML.ExternalConnector"/>
+      <inputValue xmi:id="_PrpCeUYOEeebLY9PnTEOMA" name="thingML.Configuration.connectors"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PrpCekYOEeebLY9PnTEOMA" name="Defining a ConfigPropertyAssign" incoming="_Prq3nUYOEeebLY9PnTEOMA" outgoing="_PrreuUYOEeebLY9PnTEOMA">
+      <inputValue xmi:id="_PrpCe0YOEeebLY9PnTEOMA" name="thingML.ConfigPropertyAssign"/>
+      <inputValue xmi:id="_PrpCfEYOEeebLY9PnTEOMA" name="thingML.Configuration.propassigns"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_PrpCfUYOEeebLY9PnTEOMA" name="end" incoming="_Prq3nkYOEeebLY9PnTEOMA _Prq3n0YOEeebLY9PnTEOMA _Prq3oEYOEeebLY9PnTEOMA _Prq3oUYOEeebLY9PnTEOMA _Prq3okYOEeebLY9PnTEOMA _Prq3o0YOEeebLY9PnTEOMA _PrrekEYOEeebLY9PnTEOMA _PrrekUYOEeebLY9PnTEOMA _PrrekkYOEeebLY9PnTEOMA _Prrek0YOEeebLY9PnTEOMA _PrrelEYOEeebLY9PnTEOMA _PrrelUYOEeebLY9PnTEOMA _PrrelkYOEeebLY9PnTEOMA _Prrel0YOEeebLY9PnTEOMA _PrremEYOEeebLY9PnTEOMA _PrremUYOEeebLY9PnTEOMA _PrremkYOEeebLY9PnTEOMA _Prrem0YOEeebLY9PnTEOMA _PrrenEYOEeebLY9PnTEOMA _PrrenUYOEeebLY9PnTEOMA _PrrenkYOEeebLY9PnTEOMA _Prren0YOEeebLY9PnTEOMA _PrreoEYOEeebLY9PnTEOMA _PrreoUYOEeebLY9PnTEOMA _PrreokYOEeebLY9PnTEOMA _Prreo0YOEeebLY9PnTEOMA _PrrepEYOEeebLY9PnTEOMA _PrrepUYOEeebLY9PnTEOMA _PrrepkYOEeebLY9PnTEOMA _Prrep0YOEeebLY9PnTEOMA _PrreqEYOEeebLY9PnTEOMA _PrreqUYOEeebLY9PnTEOMA _PrreqkYOEeebLY9PnTEOMA _Prreq0YOEeebLY9PnTEOMA _PrrerUYOEeebLY9PnTEOMA _PrrerkYOEeebLY9PnTEOMA _PrresEYOEeebLY9PnTEOMA _PrresUYOEeebLY9PnTEOMA _PrreskYOEeebLY9PnTEOMA _Prres0YOEeebLY9PnTEOMA _PrretUYOEeebLY9PnTEOMA _PrretkYOEeebLY9PnTEOMA _Prret0YOEeebLY9PnTEOMA _PrreuEYOEeebLY9PnTEOMA _PrreuUYOEeebLY9PnTEOMA _gHtloEYuEeehBqd0EPGJdw __qmhwEwaEeeZwYTYjajg0Q _AfgwgEwbEeeZwYTYjajg0Q"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_21e_EEYjEeehBqd0EPGJdw" name="Defining a Function" incoming="_D18ksEYkEeehBqd0EPGJdw" outgoing="_zf23UEY0EeehBqd0EPGJdw">
+      <inputValue xmi:id="_6tfycEYjEeehBqd0EPGJdw" name="thingML.Function"/>
+      <inputValue xmi:id="_7NT68EYjEeehBqd0EPGJdw" name="thingML.Thing.functions"/>
+      <inputValue xmi:id="_U3MToEYuEeehBqd0EPGJdw" name="thingML.Function.parameters"/>
+      <inputValue xmi:id="_ZQsqgEYuEeehBqd0EPGJdw" name="thingML.Function.typeRef"/>
+      <inputValue xmi:id="_HuCPkEYvEeehBqd0EPGJdw" name="thingML.Function.body"/>
+      <inputValue xmi:id="_8bZoQEYvEeehBqd0EPGJdw" name="thingML.ActionBlock"/>
+      <body>// TODO body of OpaqueAction51</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_t4p-QEY0EeehBqd0EPGJdw" name="Defining a LoopAction" incoming="_zf23UEY0EeehBqd0EPGJdw" outgoing="_gHtloEYuEeehBqd0EPGJdw">
+      <inputValue xmi:id="_0q9YgEY0EeehBqd0EPGJdw" name="thingML.LoopAction"/>
+      <inputValue xmi:id="_1VKzIEY0EeehBqd0EPGJdw" name="thingML.ActionBlock.actions"/>
+      <body>// TODO body of OpaqueAction52</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_P2hMMEwaEeeZwYTYjajg0Q" name="Defining a OnEntry CompositeState" incoming="_6nE9gEwaEeeZwYTYjajg0Q" outgoing="__qmhwEwaEeeZwYTYjajg0Q">
+      <inputValue xmi:id="_YqfjQEwaEeeZwYTYjajg0Q" name="thingML.ActionBlock"/>
+      <inputValue xmi:id="_qeMOYEwaEeeZwYTYjajg0Q" name="thingML.State.entry"/>
+      <body>// TODO body of OpaqueAction53</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_QStY8EwaEeeZwYTYjajg0Q" name="Defining a OnExit CompositeState" incoming="_5683UEwaEeeZwYTYjajg0Q" outgoing="_AfgwgEwbEeeZwYTYjajg0Q">
+      <inputValue xmi:id="_0quT0EwaEeeZwYTYjajg0Q" name="thingML.ActionBlock"/>
+      <inputValue xmi:id="_1PNg8EwaEeeZwYTYjajg0Q" name="thingML.State.exit"/>
+      <body>// TODO body of OpaqueAction54</body>
+    </node>
+  </packagedElement>
+</uml:Model>
