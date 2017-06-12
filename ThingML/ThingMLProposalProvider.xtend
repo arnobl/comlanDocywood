@@ -21,40 +21,36 @@ class ThingMLProposalProvider extends AbstractThingMLProposalProvider {
 		val map = new HashMap<String, String>()
 
 
-		map.put("composite", "Defining a Composite State
+		map.put("statechart", "Defining a Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{}
  }
 }
 
 ```
-Sub state machine contained in a state. Type `composite state`. 
+Sub state machine contained in a state. Type `statechart`. 
 
 The name of the state machine must be defined. The expected format is an 
 identifier. In our example, type: `c`.
-<br>
+
 Type `init`. 
-<br>
+
 The initial state must be defined. The expected format is an identifier. 
 In our example, type: `s1`.
-<br>
+
 History states enter their initial state the first time they are activated, 
 save their current state when exited and reenter that state when activated again. 
 Optionally, type `keeps history`. 
-<br>
 Type `{`. 
-<br>
 Type `state`.
 The name of the state must be defined. The expected format is an identifier. 
 In our example, type: `s1`.
-<br> 
 Type `{`. 
-<br>
 Type `}`. 
-<br>Type `}`. ")
+Type `}`. ")
 
 
 		map.put("message", "Defining a Message
@@ -66,24 +62,18 @@ thing fragment Msgs {
 
 ```
 Declare the model of a message with its eventual parameters. It can then be sent 
-or received over a port. Things needs to include ever messages that they use. 
+or received over a port. Things needs to include every messages that they use. 
 Type `message`. 
 
 The name of the message must be defined. The expected format is an identifier. 
 In our example, type: `rep`.
-
 Type `(`. 
-
 The name of the parameter must be defined. The expected format is an identifier. 
 In our example, type: `c `.
-<br>
 Type `:`. 
-<br>
 The type of the parameter must be defined. The expected format is an identifier.
 Then, give the value, here: `AnId `.
-
 Type `)`. 
-
 Type `;`. ")
 
 
@@ -97,15 +87,10 @@ thing TestArrays4 {
 ```
 If possible thing that depends on other are instantiated after their dependancies. 
 You can type `optional`. 
-
-
 Type `required port`. 
-
 The name of the port must be defined. The expected format is an identifier. 
 In our example, type: `myPort`.
-<br>
 Type `{`. 
-<br>
 Type `}`. ")
 
 
@@ -120,11 +105,8 @@ thing TestArrays4 {
 If possible thing that depends on other are instantiated after their dependancies. 
 `name` must be defined. The expected format is an identifier.
 Type `provided port`. 
-
 Then, give the value, here: `p1 `.
-
 Type `{`. 
-<br>
 Type `}`. ")
 
 
@@ -137,14 +119,10 @@ thing fragment A {
 
 ```
 Declare a variable for the whole instance of a thing. You can type `readonly`. 
-<br>
 Type `property`. 
-
 The name of the property must be defined. The expected format is an identifier. 
 In our example, type: `c `.
-<br>
 Type `:`. 
-<br>
 The type of the property must be defined. The expected format is an identifier.
 Then, give the value, here: `String`.")
 
@@ -158,25 +136,17 @@ thing fragment JavaMathAgg {
 
 ```
 Declares a function for the thing. Type `function`. 
-
 The name of the function must be defined. The expected format is an identifier. 
 In our example, type: `sumByte `.
-
 Type `(`.
- 
- Parameters of the function can be defined.<br>
+Parameters of the function can be defined.
 The name of the parameter must be defined. The expected format is an identifier. 
 In our example, type: `tab `.
-<br>
 Type `:`. 
-<br>
 The type of the parameter must be defined. The expected format is an identifier.
 Then, give the value, here: `AnId `.
-
 Type `)`. 
-<br>
 Type `do`. 
-<br>
 Type `end`.")
 
 
@@ -191,9 +161,7 @@ generation by compilers. They may however be used by plugins. Typically used for
 network transmissions. Additional information must be provided with annotation in 
 most cases. `name` must be defined. The expected format is an identifier.
 Type `protocol`. 
-<br>
 Then, give the value, here: `UDP `.
-<br>
 Type `;`.")
 
 
@@ -231,11 +199,9 @@ It can be a whole thing or a fragment. A fragment is a thing that can not be
 instanciated but rather be included in another thing.
 You can type `fragment`. 
 
-
 The name of the thing must be defined. The expected format is an identifier. 
 In our example, type: `TestArrays4 `.
-<br>
-Type `{`. <br>
+Type `{`. 
 Type `}`.")
 		
 		map.put("datatype", "Defining a PrimitiveType
@@ -244,17 +210,11 @@ Type `}`.")
 datatype Byte < 1 > ;
 ```
 Container for plateform types. (Allows to link types from differents plateforms). Type `datatype`. 
-
 `name` must be defined. The expected format is an identifier. In our example, type: `Byte `.
 
-
 Type `<`. 
-
 `ByteSize` must be defined. The expected format is INT. In our example, type: `1 `.
-
-
 Type `>`. 
-
 Type `;`. ")
 
 
@@ -267,9 +227,7 @@ object String ;
 Container for complex types such as classes, pointers, structs... `name` must be defined. 
 The expected format is an identifier.
 Type `object`. 
-<br>
 Then, give the value, here: `String `.
-<br>
 Type `;`.")
 
 
@@ -285,12 +243,9 @@ Type that consists of a set of named values. Type `enumeration`.
 
 The name of the enumeration must be defined. The expected format is an identifier. 
 In our example, type: `DigitalState `.
-
 Type `{`. 
-
 The name of the literal must be defined. The expected format is an identifier.
 Then, give the value, here: `LOW`.
-
 Type `}`.")
 
 
@@ -303,7 +258,6 @@ import \"../thingml.thingml\"
 The path to the model to import must be defined. The expected format is a string 
 literal (between double quotes).
 Type `import`. 
-
 Then, give the value, here: `\"../thingml.thingml\" `.")
 
 
@@ -313,10 +267,8 @@ Then, give the value, here: `\"../thingml.thingml\" `.")
 datatype Byte < 1 > @type_checker \"Integer\" ;
 ```
 Additional information passed to the compiler. (@key \"value\"). Type `@`. 
-
 The name of the annotation must be defined. The expected format is an identifier. 
 In our example, type: `type_checker `.
-
 
 The value of the annotation must be defined. The expected format is a string 
 literal (between double quotes). In our example, type: `\"Integer\" `.")
@@ -332,11 +284,8 @@ Describes the list of component instances and their inter connections.
 The name of the configuration must be defined. The expected format is an 
 identifier.
 Type `configuration`. 
-
 Then, give the value, here: `HelloWorldCfg `.
-
 Type `{`. 
-
 Type `}`.")
 
 
@@ -348,11 +297,9 @@ configuration HelloWorldCfg {
 }
 ```
 Instance of a given thing. Type `instance`. 
-
 The name of the instance must be defined. The expected format is an identifier. 
 In our example, type: `HelloWorldInstance `.
-<br>
-Type `:`. <br>
+Type `:`. 
 The type of the instance must be defined. The expected format is an identifier. 
 In our example, type: `AnId`.")
 
@@ -361,7 +308,7 @@ In our example, type: `AnId`.")
 
 ```
 thing fragment TestSession5 {
- composite state Chart init s1 {
+ statechart Chart init s1 {
   state s1{ }
   region R init s2 {
     state s2 { }
@@ -376,17 +323,12 @@ history and current state.
 By default a state machine and composite states define one region. Additional 
 regions can be added.
 Type `region`. 
-<br>
 The name of the region must be defined. The expected format is an identifier. 
 In our example, type: `R`.
-<br>
 Type `init`. 
-<br>
 The initial state must be defined. The expected format is an identifier. 
 In our example, type: `s2`.
-<br>
 Type `{`. 
-<br>
 Type `}`.")
 
 
@@ -394,7 +336,7 @@ Type `}`.")
 
 ```
 thing fragment TestHistoryStatesWithStream {
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
  }
@@ -416,7 +358,7 @@ Then, give the value, here: `s1`.")
 thing fragment TestHistoryStatesWithStream {
  property c : char 
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
    action do
@@ -432,11 +374,11 @@ Type: `do`.
 Type: `end`.")
 
 
-		map.put("entry", "Defining an entry Composite State
+		map.put("entry", "Defining an entry Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on entry do
         end
@@ -446,12 +388,12 @@ thing fragment TestArrays4 {
 
 ```
 All states (composite or not) can have entry actions executed when entering the state. 
-<br>
+
 Type `on entry`. 
-<br>
+
 The block of actions must be defined.
 Type `do`. 
-<br>
+
 Type `end`.")
 
 
@@ -463,7 +405,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1
     event e : p?mArray
@@ -480,11 +422,11 @@ The expression of the event must be defined.
 In our example, type: `p?mArray`.")
 
 
-		map.put("exit", "Defining an exit Composite State
+		map.put("exit", "Defining an exit Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on exit do
         end
@@ -494,12 +436,12 @@ thing fragment TestArrays4 {
 
 ```
 All states (composite or not) can have exit actions executed when leaving the state. 
-<br>
+
 Type `on exit`. 
-<br>
+
 The block of actions must be defined.
 Type `do`. 
-<br>
+
 Type `end`.")
 
 
@@ -507,16 +449,16 @@ Type `end`.")
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 {
+ statechart c init s1 {
     final state s1{}
  }
 }
 
 ```
-State from which it can't be any outgoing transition.<br>
-Type `final`. <br>
-The state must be defined.<br>
-Type `}`.<br>
+State from which it can't be any outgoing transition.
+Type `final`. 
+The state must be defined.
+Type `}`.
 Type `}`. ")
 
 
@@ -526,7 +468,7 @@ Type `}`. ")
 thing fragment TestHistoryStatesWithStream {
  property c : char 
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
    guard c == 'n'
@@ -571,7 +513,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
  
- composite state C2 init s1 {
+ statechart C2 init s1 {
   state s1 {
     internal event e : p?mArray
     action do
@@ -581,11 +523,11 @@ thing fragment TestHistoryStatesWithStream {
 
 ```
 Internal transitions can be used to implement event handlers on states which do 
-not exit and reenter the state.<br>
-Type `internal`.<br>
-The event of the internal transition must be defined.<br>
-Actions of the transition can be defined. <br>
-Type `}`.<br>
+not exit and reenter the state.
+Type `internal`.
+The event of the internal transition must be defined.
+Actions of the transition can be defined. 
+Type `}`.
 Type `}`.")
 
 
@@ -599,14 +541,14 @@ Type `datatype`.
 
 The name of the primitive type must be defined. The expected format is an identifier. 
 In our example, type: `Byte `.
-<br>
+
 Type `<`. 
-<br>
+
 The byte size must be defined. The expected format is an integer value. 
 In our example, type: `1`.
-<br>
+
 Type `>`. 
-<br>
+
 Type `;`. ")
 
 
@@ -665,7 +607,7 @@ thing fragment TestArrays4 {
   sends rep
  }
 	
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on entry do
           myPort!rep('\'A\'')
@@ -676,10 +618,10 @@ thing fragment TestArrays4 {
 
 ```
 Sending of a message on a port with given parameters.
-The name of the port must be defined.<br>
-In our example, type: `myPort`.<br>
-Type `!`.<br>
-The expression of the message must be defined.<br>
+The name of the port must be defined.
+In our example, type: `myPort`.
+Type `!`.
+The expression of the message must be defined.
 In our example, type: `rep('\'A\'')`.";
 		}
 		acceptor.accept(p);
@@ -698,7 +640,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1
     event e : p?mArray
@@ -707,10 +649,10 @@ thing fragment TestHistoryStatesWithStream {
 
 ```
 Message reception event.
-The name of the port must be defined.<br>
-In our example, type: `p`.<br>
-Type `?`.<br>
-The name of the message must be defined<br>
+The name of the port must be defined.
+In our example, type: `p`.
+Type `?`.
+The name of the message must be defined
 In our example, type: `mArray`.";
 		}
 		acceptor.accept(p);
