@@ -117,8 +117,8 @@ This will still lead to the generation of a single .target file. `importURI` mus
  be defined. 
 The expected format is a string that can be surrounded by either simple quotes ' or
  double quotes \".
-<br>Type `include`. 
-<br>Then, give the value, here: `\"base.tpd\" `.")
+Type `include`. 
+Then, give the value, here: `\"base.tpd\" `.")
 		
 		map.put("location \"http://p2.repository.url/\" {
 	
@@ -147,7 +147,7 @@ quotes \". In our example, type: `\"http://download.eclipse.org/releases/kepler\
 
 The Installable Units (IUs) your want to include in your target. 
 This can be bundles or Eclipse features (it may end with feature.group).
-<br>An identifier can be defined. 
+An identifier can be defined. 
 In our example, type: `org.eclipse.pde `.
 
 
