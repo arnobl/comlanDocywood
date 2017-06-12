@@ -2,9 +2,9 @@
 
 [Defining a Thing](#Defining-a-Thing)<br/>
 [Defining an includes Thing](#Defining-a-includes-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
-[Defining an entry Composite State](#Defining-a-entry-CompositeState)<br/>
-[Defining an exit Composite State](#Defining-a-exit-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
+[Defining an entry Statechart](#Defining-a-entry-Statechart)<br/>
+[Defining an exit Statechart](#Defining-a-exit-Statechart)<br/>
 [Defining a Final State](#Defining-a-FinalState)<br/>
 [Defining a Parallel Region](#Defining-a-ParallelRegion)<br/>
 [Defining a Property](#Defining-a-Property)<br/>
@@ -69,17 +69,17 @@ Type `}`.
 
 
 
-### <a name="Defining-a-CompositeState"></a>Defining a Composite State
+### <a name="Defining-a-Statechart"></a>Defining a Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{}
  }
 }
 
 ```
-Sub state machine contained in a state. Type `composite state`. 
+Sub state machine contained in a state. Type `statechart`. 
 
 The name of the state machine must be defined. The expected format is an identifier. In our example, type: `c`.<br/>
 Type `init`.<br/>
@@ -97,11 +97,11 @@ See also:<br/>
 [Defining a Thing](#Defining-a-Thing)
 
 
-### <a name="Defining-a-entry-CompositeState"></a>Defining an entry Composite State
+### <a name="Defining-a-entry-Statechart"></a>Defining an entry Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on entry do
         end
@@ -118,14 +118,14 @@ Type `end`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
-### <a name="Defining-a-exit-CompositeState"></a>Defining an exit Composite State
+### <a name="Defining-a-exit-Statechart"></a>Defining an exit Statechart
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on exit do
         end
@@ -142,14 +142,14 @@ Type `end`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
 ### <a name="Defining-a-FinalState"></a>Defining a Final State
 
 ```
 thing fragment TestArrays4 {
- composite state c init s1 {
+ statechart c init s1 {
     final state s1{}
  }
 }
@@ -163,14 +163,14 @@ Type `}`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
 ### <a name="Defining-a-ParallelRegion"></a>Defining a Parallel Region
 
 ```
 thing fragment TestSession5 {
- composite state Chart init s1 {
+ statechart Chart init s1 {
   state s1{ }
   region R init s2 {
     state s2 { }
@@ -190,14 +190,14 @@ Type `}`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a CompositeState](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
 ### <a name="Defining-a-Transition"></a>Defining a Transition
 
 ```
 thing fragment TestHistoryStatesWithStream {
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
  }
@@ -213,7 +213,7 @@ Then, give the value, here: `s1`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
 ### <a name="Defining-a-Property"></a>Defining a Property
@@ -243,7 +243,7 @@ See also:<br/>
 thing fragment TestHistoryStatesWithStream {
  property c : char 
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
    action do
@@ -260,7 +260,7 @@ Type: `end`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
 [Defining a Property](#Defining-a-Property)
 
 
@@ -349,7 +349,7 @@ See also:<br/>
 thing fragment TestHistoryStatesWithStream {
  property c : char 
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1 
    guard c == 'n'
@@ -364,7 +364,7 @@ In our example, type: `c == 'n'`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
 [Defining a Property](#Defining-a-Property)
 
 
@@ -376,7 +376,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1
     event e : p?mArray
@@ -394,7 +394,7 @@ In our example, type: `p?mArray`.
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
 [Defining a Required Port](#Defining-a-RequiredPort)
 
 
@@ -406,7 +406,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
  
- composite state C2 init s1 {
+ statechart C2 init s1 {
   state s1 {
     internal event e : p?mArray
     action do
@@ -426,7 +426,7 @@ Type `}`.<br/>
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
 [Defining a Required Port](#Defining-a-RequiredPort)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)
+[Defining a Statechart](#Defining-a-Statechart)
 
 
 ### <a name="Defining-a-Message"></a>Defining a Message
@@ -465,7 +465,7 @@ thing fragment TestHistoryStatesWithStream {
    receives mArray
  }
 
- composite state C2 init s1 {
+ statechart C2 init s1 {
  state s1 {
    transition t1 -> s1
     event e : p?mArray
@@ -482,7 +482,7 @@ In our example, type: `mArray`.<br/>
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
 [Defining a Required Port](#Defining-a-RequiredPort)<br/>
 [Defining a Transition](#Defining-a-Transition)<br/>
 [Defining an Event Transition](#Defining-a-event-Transition)
@@ -496,7 +496,7 @@ thing fragment TestArrays4 {
   sends rep
  }
 	
- composite state c init s1 keeps history{
+ statechart c init s1 keeps history{
     state s1{
         on entry do
           myPort!rep('\'A\'')
@@ -515,8 +515,8 @@ In our example, type: `rep('\'A\'')`.<br/>
 
 See also:<br/>
 [Defining a Thing](#Defining-a-Thing)<br/>
-[Defining a Composite State](#Defining-a-CompositeState)<br/>
-[Defining an entry Composite State](#Defining-a-entry-CompositeState)<br/>
+[Defining a Statechart](#Defining-a-Statechart)<br/>
+[Defining an entry Statechart](#Defining-a-entry-Statechart)<br/>
 [Defining a Required Port](#Defining-a-RequiredPort)
 
 
