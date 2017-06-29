@@ -1,0 +1,19 @@
+QName a qualified named (e.g., `pkg1.Class1`)
+STRING a string literal (between double quotes)
+kompren.Slicer.uriMetamodel The source metamodel URIs
+kompren.Slicer.inputClasses The input classes
+kompren.Radius.focusedClasses The classes of the radius
+kompren.Slicer.radius A `radius`
+kompren.Slicer.name The `name` of the slicer
+kompren.OppositeCreation.name The `name` of the opposite reference
+kompren.Constraint.name The `name` of the constraint
+kompren.SlicedElement.domain The sliced element
+CODE_BLOCK a block of Xtend code (between `[[` `]]`)
+kompren.Constraint.expression The boolean expression of the constraint
+IDKOMPREN a simple variable name (i.e. must follow the Java naming convention)
+kompren.SlicedElement.expression An expression
+kompren.Slicer.helper a helper
+kompren.SlicedElement.isOption an optional element to slice
+kompren.Slicer.onEnd a post-execution code block
+kompren.Slicer.onStart a pre-execution code block
+kompren.Slicer.strict a strict slicer

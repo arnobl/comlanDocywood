@@ -1,0 +1,15 @@
+STRING_LIT a string literal (between double quotes)
+ID an identifier
+thingML.Message.name The name of the message
+thingML.Thing.name The name of the thing
+thingML.State.name The name of the state
+thingML.Instance.name The name of the instance
+thingML.Instance.type The type
+thingML.Configuration.name The name of the configuration
+thingML.CompositeState.initial The initial state
+thingML.CompositeState.substate Sub-states
+thingML.PlatformAnnotation.name The name of the annotation
+thingML.Message.parameters Parameters
+thingML.Type.name The name
+thingML.EnumerationLiteral.name The name of the enumeration
+thingML.ParallelRegion.name The name of the parallel region

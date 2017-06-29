@@ -1,0 +1,7 @@
+STRING a string that can be surrounded by either simple quotes ' or double quotes "
+targetplatform.Location.ID The ID
+targetplatform.Environment.ID The ID
+targetplatform.UI.ID The ID
+ID a character sequence starting with an alpha (no space allowed)
+targetplatform.Location.URI The URI of the location
+Option `requirements`, whether this target must have all required IUs of the selected IUs available and included in the target to resolve successfully. If this option is true, the planner will be used to resolve otherwise the slicer is used. The planner can describe any missing requirements as errors.<br>`allEnvironments`, whether this target should download and include environment (platform) specific units for all available platforms (vs. only the current target definition’s environment settings). Only supported by the slicer so requirements must not be used for this setting to be used. `source`, whether this location should download and include source bundles for the selected units if the associated source is available in the repository.<br>`configurePhase`, whether this target should execute the configure phase after fetching the selected units.

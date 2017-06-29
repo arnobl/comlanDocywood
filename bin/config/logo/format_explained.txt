@@ -1,0 +1,3 @@
+Double a double value
+`angle` The rotation angle
+`distance` The distance
