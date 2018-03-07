@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_hKi0QCHrEeigIsnwAHlXZg">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_hKjbUCHrEeigIsnwAHlXZg" name="The serie of documentations for TPD">
+    <node xmi:type="uml:InitialNode" xmi:id="_hKjbUSHrEeigIsnwAHlXZg" name="init" outgoing="_hKkCdiHrEeigIsnwAHlXZg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKjbUiHrEeigIsnwAHlXZg" name="Defining a TargetPlatform" outgoing="_hKkCdyHrEeigIsnwAHlXZg _hKkCeSHrEeigIsnwAHlXZg _hKkCeyHrEeigIsnwAHlXZg _hKkCgCHrEeigIsnwAHlXZg" incoming="_hKkCdiHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKjbUyHrEeigIsnwAHlXZg" name="targetplatform.TargetPlatform"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKjbVCHrEeigIsnwAHlXZg" name="Defining a Options" outgoing="_hKkCeCHrEeigIsnwAHlXZg" incoming="_hKkCdyHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKjbVSHrEeigIsnwAHlXZg" name="targetplatform.Options"/>
+      <inputValue xmi:id="_hKjbViHrEeigIsnwAHlXZg" name="targetplatform.TargetPlatform.contents"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKjbVyHrEeigIsnwAHlXZg" name="Defining a options Options" outgoing="_hKkCgSHrEeigIsnwAHlXZg" incoming="_hKkCeCHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCYCHrEeigIsnwAHlXZg" name="targetplatform.Options.options"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCYSHrEeigIsnwAHlXZg" name="Defining a Environment" outgoing="_hKkCeiHrEeigIsnwAHlXZg" incoming="_hKkCeSHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCYiHrEeigIsnwAHlXZg" name="targetplatform.Environment"/>
+      <inputValue xmi:id="_hKkCYyHrEeigIsnwAHlXZg" name="targetplatform.TargetPlatform.contents"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCZCHrEeigIsnwAHlXZg" name="Defining a env Environment" outgoing="_hKkCgiHrEeigIsnwAHlXZg" incoming="_hKkCeiHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCZSHrEeigIsnwAHlXZg" name="targetplatform.Environment.env"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCZiHrEeigIsnwAHlXZg" name="Defining a Location" outgoing="_hKkCfCHrEeigIsnwAHlXZg _hKkCfSHrEeigIsnwAHlXZg" incoming="_hKkCeyHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCZyHrEeigIsnwAHlXZg" name="targetplatform.Location"/>
+      <inputValue xmi:id="_hKkCaCHrEeigIsnwAHlXZg" name="targetplatform.TargetPlatform.contents"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCaSHrEeigIsnwAHlXZg" name="Defining a options Location" outgoing="_hKkCgyHrEeigIsnwAHlXZg" incoming="_hKkCfCHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCaiHrEeigIsnwAHlXZg" name="targetplatform.Location.options"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCayHrEeigIsnwAHlXZg" name="Defining a IU" outgoing="_hKkCfiHrEeigIsnwAHlXZg _hKkCfyHrEeigIsnwAHlXZg" incoming="_hKkCfSHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCbCHrEeigIsnwAHlXZg" name="targetplatform.IU"/>
+      <inputValue xmi:id="_hKkCbSHrEeigIsnwAHlXZg" name="targetplatform.Location.ius"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCbiHrEeigIsnwAHlXZg" name="Defining a ID IU" outgoing="_hKkChCHrEeigIsnwAHlXZg" incoming="_hKkCfiHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCbyHrEeigIsnwAHlXZg" name="targetplatform.IU.ID"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCcCHrEeigIsnwAHlXZg" name="Defining a version IU" outgoing="_hKkChSHrEeigIsnwAHlXZg" incoming="_hKkCfyHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCcSHrEeigIsnwAHlXZg" name="targetplatform.IU.version"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hKkCciHrEeigIsnwAHlXZg" name="Defining a IncludeDeclaration" outgoing="_hKkChiHrEeigIsnwAHlXZg" incoming="_hKkCgCHrEeigIsnwAHlXZg">
+      <inputValue xmi:id="_hKkCcyHrEeigIsnwAHlXZg" name="targetplatform.IncludeDeclaration"/>
+      <inputValue xmi:id="_hKkCdCHrEeigIsnwAHlXZg" name="targetplatform.TargetPlatform.contents"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_hKkCdSHrEeigIsnwAHlXZg" name="end" incoming="_hKkCgSHrEeigIsnwAHlXZg _hKkCgiHrEeigIsnwAHlXZg _hKkCgyHrEeigIsnwAHlXZg _hKkChCHrEeigIsnwAHlXZg _hKkChSHrEeigIsnwAHlXZg _hKkChiHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCdiHrEeigIsnwAHlXZg" source="_hKjbUSHrEeigIsnwAHlXZg" target="_hKjbUiHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCdyHrEeigIsnwAHlXZg" source="_hKjbUiHrEeigIsnwAHlXZg" target="_hKjbVCHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCeCHrEeigIsnwAHlXZg" source="_hKjbVCHrEeigIsnwAHlXZg" target="_hKjbVyHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCeSHrEeigIsnwAHlXZg" source="_hKjbUiHrEeigIsnwAHlXZg" target="_hKkCYSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCeiHrEeigIsnwAHlXZg" source="_hKkCYSHrEeigIsnwAHlXZg" target="_hKkCZCHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCeyHrEeigIsnwAHlXZg" source="_hKjbUiHrEeigIsnwAHlXZg" target="_hKkCZiHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCfCHrEeigIsnwAHlXZg" source="_hKkCZiHrEeigIsnwAHlXZg" target="_hKkCaSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCfSHrEeigIsnwAHlXZg" source="_hKkCZiHrEeigIsnwAHlXZg" target="_hKkCayHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCfiHrEeigIsnwAHlXZg" source="_hKkCayHrEeigIsnwAHlXZg" target="_hKkCbiHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCfyHrEeigIsnwAHlXZg" source="_hKkCayHrEeigIsnwAHlXZg" target="_hKkCcCHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCgCHrEeigIsnwAHlXZg" source="_hKjbUiHrEeigIsnwAHlXZg" target="_hKkCciHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCgSHrEeigIsnwAHlXZg" source="_hKjbVyHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCgiHrEeigIsnwAHlXZg" source="_hKkCZCHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkCgyHrEeigIsnwAHlXZg" source="_hKkCaSHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkChCHrEeigIsnwAHlXZg" source="_hKkCbiHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkChSHrEeigIsnwAHlXZg" source="_hKkCcCHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hKkChiHrEeigIsnwAHlXZg" source="_hKkCciHrEeigIsnwAHlXZg" target="_hKkCdSHrEeigIsnwAHlXZg"/>
+  </packagedElement>
+</uml:Model>

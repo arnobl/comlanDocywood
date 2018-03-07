@@ -1,0 +1,14 @@
+object String
+	@c_type "char *"
+	@c_byte_size "*"
+    @js_type "String"
+	@java_type "String"
+    @SenML_type "String";
+
+thing BasicHello {    
+    statechart behavior init hello keeps history {
+        state hello {
+            on entry print("hello")    
+        }
+    }    
+}

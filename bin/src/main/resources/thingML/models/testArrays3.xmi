@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../thingml.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="TestArrays3">
+    <annotations name="test" value="&quot; # E&quot;"/>
+    <includes href="../core/test.xmi#//@types.2"/>
+    <properties changeable="true" name="size">
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.4"/>
+      </typeRef>
+      <init xsi:type="thingML:IntegerLiteral" intValue="8"/>
+    </properties>
+    <properties name="array">
+      <typeRef isArray="true">
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.5"/>
+        <cardinality xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+      </typeRef>
+    </properties>
+    <behaviour name="TestArrays3" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="I">
+        <entry xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ExternExpression" expression="'\'E\''"/>
+        </entry>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

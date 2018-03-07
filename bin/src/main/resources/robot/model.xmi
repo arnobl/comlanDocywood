@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logo:ProgramUnit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:logo="http://logo">
+  <commands xsi:type="logo:Move" distance="25.0"/>
+  <commands xsi:type="logo:WhileNoObstacle" distance="10.0">
+    <commands xsi:type="logo:Move" distance="75.0"/>
+    <commands xsi:type="logo:Turn" angle="90.0"/>
+    <commands xsi:type="logo:Move" distance="50.0"/>
+  </commands>
+  <commands xsi:type="logo:Turn" angle="-100.0"/>
+  <commands xsi:type="logo:Move" distance="60.0"/>
+</logo:ProgramUnit>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kompren:Slicer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:kompren="http://kompren/fr.inria.diverse.kompren" name="aStrictSlicer" strict="true" helper="" onStart="" onEnd="">
+  <uriMetamodel>platform:/resource/test/src/main/ex1.genmodel</uriMetamodel>
+  <slicedElements xsi:type="kompren:SlicedClass" expression="">
+    <domain xsi:type="ecore:EClass" href="src/main/resources/kompren/models/ex1.ecore#//A"/>
+  </slicedElements>
+  <inputClasses href="src/main/resources/kompren/models/ex1.ecore#//A"/>
+</kompren:Slicer>

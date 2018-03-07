@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../thingml.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="TestMsgs" fragment="true">
+    <messages name="cepMsg">
+      <parameters name="aName">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+    </messages>
+  </types>
+  <types xsi:type="thingML:Thing" name="TestHistoryStatesWithStream">
+    <annotations name="test" value="&quot;yzyznyniyziyzniyz # I1313412I24I243I23&quot;"/>
+    <annotations name="conf" value="&quot;connector test.cepRcv => test.cepSend&quot;"/>
+    <includes href="../core/test.xmi#//@types.2"/>
+    <includes href="#//@types.0"/>
+    <ports xsi:type="thingML:ProvidedPort" name="cepSend" sends="//@types.0/@messages.0"/>
+    <ports xsi:type="thingML:RequiredPort" name="cepRcv" receives="//@types.0/@messages.0"/>
+    <behaviour name="TestHistoryStates" initial="//@types.1/@behaviour.0/@substate.0">
+      <substate name="I">
+        <entry xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ExternExpression" expression="'\'I\''"/>
+        </entry>
+        <outgoing target="//@types.1/@behaviour.0/@substate.1">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'y\''"/>
+          </guard>
+        </outgoing>
+        <outgoing target="//@types.1/@behaviour.0/@substate.2">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'z\''"/>
+          </guard>
+        </outgoing>
+      </substate>
+      <substate xsi:type="thingML:CompositeState" name="C1" initial="//@types.1/@behaviour.0/@substate.1/@substate.0" history="true">
+        <outgoing target="//@types.1/@behaviour.0/@substate.0">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'i\''"/>
+          </guard>
+        </outgoing>
+        <outgoing target="//@types.1/@behaviour.0/@substate.2">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'z\''"/>
+          </guard>
+        </outgoing>
+        <substate name="C1S1">
+          <entry xsi:type="thingML:SendAction">
+            <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+            <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+            <parameters xsi:type="thingML:ExternExpression" expression="'\'1\''"/>
+          </entry>
+          <outgoing target="//@types.1/@behaviour.0/@substate.1/@substate.1">
+            <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+            <guard xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+              </lhs>
+              <rhs xsi:type="thingML:ExternExpression" expression="'\'n\''"/>
+            </guard>
+          </outgoing>
+        </substate>
+        <substate name="C1S2">
+          <entry xsi:type="thingML:SendAction">
+            <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+            <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+            <parameters xsi:type="thingML:ExternExpression" expression="'\'2\''"/>
+          </entry>
+          <outgoing target="//@types.1/@behaviour.0/@substate.1/@substate.0">
+            <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+            <guard xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+              </lhs>
+              <rhs xsi:type="thingML:ExternExpression" expression="'\'m\''"/>
+            </guard>
+          </outgoing>
+        </substate>
+      </substate>
+      <substate xsi:type="thingML:CompositeState" name="C2" initial="//@types.1/@behaviour.0/@substate.2/@substate.0" history="true">
+        <outgoing target="//@types.1/@behaviour.0/@substate.0">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'i\''"/>
+          </guard>
+        </outgoing>
+        <outgoing target="//@types.1/@behaviour.0/@substate.1">
+          <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:ExternExpression" expression="'\'y\''"/>
+          </guard>
+        </outgoing>
+        <substate name="C2S1">
+          <entry xsi:type="thingML:SendAction">
+            <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+            <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+            <parameters xsi:type="thingML:ExternExpression" expression="'\'3\''"/>
+          </entry>
+          <outgoing target="//@types.1/@behaviour.0/@substate.2/@substate.1">
+            <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+            <guard xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+              </lhs>
+              <rhs xsi:type="thingML:ExternExpression" expression="'\'n\''"/>
+            </guard>
+          </outgoing>
+        </substate>
+        <substate name="C2S2">
+          <entry xsi:type="thingML:SendAction">
+            <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+            <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+            <parameters xsi:type="thingML:ExternExpression" expression="'\'4\''"/>
+          </entry>
+          <outgoing target="//@types.1/@behaviour.0/@substate.2/@substate.0">
+            <event xsi:type="thingML:ReceiveMessage" name="m" port="//@types.1/@ports.1" message="//@types.0/@messages.0"/>
+            <guard xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+              </lhs>
+              <rhs xsi:type="thingML:ExternExpression" expression="'\'n\''"/>
+            </guard>
+          </outgoing>
+        </substate>
+      </substate>
+    </behaviour>
+    <streams name="testStream">
+      <input xsi:type="thingML:SimpleSource" name="m">
+        <message>
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.1"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.0"/>
+        </message>
+      </input>
+      <selection name="c">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+        </typeRef>
+        <init xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@outgoing.0/@event.0">
+          <parameter xsi:type="thingML:SimpleParamRef">
+            <parameterRef href="../Others/testInstanceInitializationOrder.xmi#//@types.0/@messages.0/@parameters.0"/>
+          </parameter>
+        </init>
+      </selection>
+      <output port="//@types.1/@ports.0" message="//@types.0/@messages.0">
+        <parameters xsi:type="thingML:PropertyReference" property="//@types.1/@streams.0/@selection.0"/>
+      </output>
+    </streams>
+  </types>
+</thingML:ThingMLModel>

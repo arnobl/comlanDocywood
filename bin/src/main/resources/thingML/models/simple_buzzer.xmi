@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../../bricks/buzzer.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="SimpleBuzzer">
+    <includes href="../buzzer.thingml#//@types.0"/>
+    <includes href="../../../incubator/DynThing/Timer.thingml#//@types.1"/>
+    <ports xsi:type="thingML:RequiredPort" name="Buzzer">
+      <sends href="../buzzer.thingml#//@types.0/@messages.2"/>
+    </ports>
+    <ports xsi:type="thingML:RequiredPort" name="Timer">
+      <sends href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+      <receives href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+    </ports>
+    <properties name="counter">
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../../studies/Snake/_Common/_Datatypes.thingml#//@types.3"/>
+      </typeRef>
+      <init xsi:type="thingML:IntegerLiteral"/>
+    </properties>
+    <properties name="end_motif">
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../../studies/Snake/_Common/_Datatypes.thingml#//@types.2"/>
+      </typeRef>
+      <init xsi:type="thingML:BooleanLiteral" boolValue="false"/>
+    </properties>
+    <behaviour name="SimpleBuzzerImpl" initial="//@types.0/@behaviour.0/@substate.2">
+      <substate name="Fast">
+        <entry xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+          <expression xsi:type="thingML:IntegerLiteral"/>
+        </entry>
+        <internal name="repeat">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <guard xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+            <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+          </guard>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:SendAction" port="//@types.0/@ports.0">
+              <message href="../buzzer.thingml#//@types.0/@messages.2"/>
+              <parameters xsi:type="thingML:IntegerLiteral" intValue="100"/>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+              <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+              <parameters xsi:type="thingML:IntegerLiteral" intValue="150"/>
+            </actions>
+          </action>
+        </internal>
+        <outgoing name="switch" target="//@types.0/@behaviour.0/@substate.1">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <guard xsi:type="thingML:AndExpression">
+            <lhs xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+              <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+            </lhs>
+            <rhs xsi:type="thingML:NotExpression">
+              <term xsi:type="thingML:PropertyReference" property="//@types.0/@properties.1"/>
+            </rhs>
+          </guard>
+          <action xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+            <parameters xsi:type="thingML:IntegerLiteral" intValue="50"/>
+          </action>
+        </outgoing>
+        <outgoing name="waiting" target="//@types.0/@behaviour.0/@substate.2">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <guard xsi:type="thingML:AndExpression">
+            <lhs xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+              <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+            </lhs>
+            <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.1"/>
+          </guard>
+        </outgoing>
+      </substate>
+      <substate name="Slow">
+        <entry xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+          <expression xsi:type="thingML:IntegerLiteral"/>
+        </entry>
+        <exit xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.1">
+          <expression xsi:type="thingML:BooleanLiteral" boolValue="true"/>
+        </exit>
+        <internal name="repeat">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <guard xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+            <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+          </guard>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:SendAction" port="//@types.0/@ports.0">
+              <message href="../buzzer.thingml#//@types.0/@messages.2"/>
+              <parameters xsi:type="thingML:IntegerLiteral" intValue="200"/>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+              <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+              <parameters xsi:type="thingML:IntegerLiteral" intValue="250"/>
+            </actions>
+          </action>
+        </internal>
+        <outgoing name="switch" target="//@types.0/@behaviour.0/@substate.0">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <guard xsi:type="thingML:EqualsExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+            <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+          </guard>
+          <action xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+            <parameters xsi:type="thingML:IntegerLiteral" intValue="50"/>
+          </action>
+        </outgoing>
+      </substate>
+      <substate name="Wait">
+        <entry xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+          <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+          <parameters xsi:type="thingML:IntegerLiteral" intValue="1000"/>
+        </entry>
+        <exit xsi:type="thingML:SendAction" port="//@types.0/@ports.1">
+          <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.0"/>
+          <parameters xsi:type="thingML:IntegerLiteral" intValue="50"/>
+        </exit>
+        <outgoing name="begin" target="//@types.0/@behaviour.0/@substate.0">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.1">
+            <message href="../../../incubator/DynThing/Timer.thingml#//@types.1/@messages.2"/>
+          </event>
+          <action xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.1">
+            <expression xsi:type="thingML:BooleanLiteral" boolValue="false"/>
+          </action>
+        </outgoing>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../thingml.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="TestArrays4">
+    <annotations name="conf" value="&quot;instance a : A&quot;"/>
+    <annotations name="conf" value="&quot;set a.c = 5 + 0&quot;"/>
+    <annotations name="conf" value="&quot;instance b : A&quot;"/>
+    <annotations name="conf" value="&quot;set b.c = 5 + 5&quot;"/>
+    <annotations name="conf" value="&quot;instance d : A&quot;"/>
+    <annotations name="conf" value="&quot;connector a.myPort => test.p1&quot;"/>
+    <annotations name="conf" value="&quot;connector b.myPort => test.p2&quot;"/>
+    <annotations name="conf" value="&quot;connector d.myPort => test.p3&quot;"/>
+    <annotations name="test" value="&quot; # ABC&quot;"/>
+    <includes href="#//@types.1"/>
+    <includes href="../../thingml/core/_linux/websocket.thingml#//@types.4"/>
+    <ports xsi:type="thingML:ProvidedPort" name="p1" sends="//@types.1/@messages.0" receives="//@types.1/@messages.1"/>
+    <ports xsi:type="thingML:ProvidedPort" name="p2" sends="//@types.1/@messages.0" receives="//@types.1/@messages.1"/>
+    <ports xsi:type="thingML:ProvidedPort" name="p3" sends="//@types.1/@messages.0" receives="//@types.1/@messages.1"/>
+    <behaviour name="c" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="s">
+        <entry xsi:type="thingML:ActionBlock"/>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="e" port="//@types.0/@ports.0" message="//@types.1/@messages.1"/>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:SendAction">
+              <port xsi:type="thingML:RequiredPort" href="../core/test.thingml#//@types.2/@ports.0"/>
+              <message href="../core/test.thingml#//@types.0/@messages.1"/>
+              <parameters xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.1/@messages.1/@parameters.0"/>
+              </parameters>
+            </actions>
+          </action>
+        </internal>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="e" port="//@types.0/@ports.1" message="//@types.1/@messages.1"/>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:SendAction">
+              <port xsi:type="thingML:RequiredPort" href="../core/test.thingml#//@types.2/@ports.0"/>
+              <message href="../core/test.thingml#//@types.0/@messages.1"/>
+              <parameters xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.1/@messages.1/@parameters.0"/>
+              </parameters>
+            </actions>
+          </action>
+        </internal>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="e" port="//@types.0/@ports.2" message="//@types.1/@messages.1"/>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:SendAction">
+              <port xsi:type="thingML:RequiredPort" href="../core/test.thingml#//@types.2/@ports.0"/>
+              <message href="../core/test.thingml#//@types.0/@messages.1"/>
+              <parameters xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.0/@event.0">
+                <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.1/@messages.1/@parameters.0"/>
+              </parameters>
+            </actions>
+          </action>
+        </internal>
+      </substate>
+    </behaviour>
+  </types>
+  <types xsi:type="thingML:Thing" name="Msgs" fragment="true">
+    <messages name="go"/>
+    <messages name="rep">
+      <parameters name="c">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+    </messages>
+  </types>
+  <types xsi:type="thingML:Thing" name="A" includes="//@types.1">
+    <ports xsi:type="thingML:RequiredPort" name="myPort" sends="//@types.1/@messages.1" receives="//@types.1/@messages.0"/>
+    <properties changeable="true" name="c">
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Yun-Debugger/lib/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <init xsi:type="thingML:PlusExpression">
+        <lhs xsi:type="thingML:IntegerLiteral" intValue="2"/>
+        <rhs xsi:type="thingML:IntegerLiteral" intValue="2"/>
+      </init>
+    </properties>
+    <properties name="ar">
+      <typeRef isArray="true">
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Yun-Debugger/lib/_Datatypes.thingml#//@types.9"/>
+        <cardinality xsi:type="thingML:PropertyReference" property="//@types.1/@messages.1/@parameters.0"/>
+      </typeRef>
+    </properties>
+    <behaviour name="c" initial="//@types.2/@behaviour.0/@substate.0">
+      <substate name="I">
+        <outgoing target="//@types.0/@behaviour.0/@substate.0">
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.2/@ports.0" message="//@types.1/@messages.0"/>
+        </outgoing>
+      </substate>
+      <substate name="s">
+        <entry xsi:type="thingML:ActionBlock">
+          <actions xsi:type="thingML:LocalVariable" name="n">
+            <typeRef>
+              <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Yun-Debugger/lib/_Datatypes.thingml#//@types.9"/>
+            </typeRef>
+            <init xsi:type="thingML:IntegerLiteral"/>
+          </actions>
+          <actions xsi:type="thingML:LoopAction">
+            <condition xsi:type="thingML:LowerExpression">
+              <lhs xsi:type="thingML:PropertyReference" property="//@types.2/@behaviour.0/@substate.1/@entry/@actions.0"/>
+              <rhs xsi:type="thingML:PropertyReference" property="//@types.1/@messages.1/@parameters.0"/>
+            </condition>
+            <action xsi:type="thingML:ActionBlock">
+              <actions xsi:type="thingML:VariableAssignment" property="//@types.2/@properties.1">
+                <index xsi:type="thingML:PropertyReference" property="//@types.2/@behaviour.0/@substate.1/@entry/@actions.0"/>
+                <expression xsi:type="thingML:PropertyReference" property="//@types.2/@behaviour.0/@substate.1/@entry/@actions.0"/>
+              </actions>
+              <actions xsi:type="thingML:VariableAssignment" property="//@types.2/@behaviour.0/@substate.1/@entry/@actions.0">
+                <expression xsi:type="thingML:PlusExpression">
+                  <lhs xsi:type="thingML:PropertyReference" property="//@types.2/@behaviour.0/@substate.1/@entry/@actions.0"/>
+                  <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                </expression>
+              </actions>
+            </action>
+          </actions>
+          <actions xsi:type="thingML:ConditionalAction">
+            <condition xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.2/@properties.1"/>
+                <index xsi:type="thingML:MinusExpression">
+                  <lhs xsi:type="thingML:PropertyReference" property="//@types.1/@messages.1/@parameters.0"/>
+                  <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                </index>
+              </lhs>
+              <rhs xsi:type="thingML:IntegerLiteral" intValue="4"/>
+            </condition>
+            <action xsi:type="thingML:ActionBlock">
+              <actions xsi:type="thingML:SendAction" port="//@types.2/@ports.0" message="//@types.1/@messages.1">
+                <parameters xsi:type="thingML:ExternExpression" expression="'\'A\''"/>
+              </actions>
+            </action>
+          </actions>
+          <actions xsi:type="thingML:ConditionalAction">
+            <condition xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.2/@properties.1"/>
+                <index xsi:type="thingML:MinusExpression">
+                  <lhs xsi:type="thingML:PropertyReference" property="//@types.1/@messages.1/@parameters.0"/>
+                  <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                </index>
+              </lhs>
+              <rhs xsi:type="thingML:IntegerLiteral" intValue="9"/>
+            </condition>
+            <action xsi:type="thingML:ActionBlock">
+              <actions xsi:type="thingML:SendAction" port="//@types.2/@ports.0" message="//@types.1/@messages.1">
+                <parameters xsi:type="thingML:ExternExpression" expression="'\'B\''"/>
+              </actions>
+            </action>
+          </actions>
+          <actions xsi:type="thingML:ConditionalAction">
+            <condition xsi:type="thingML:EqualsExpression">
+              <lhs xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.2/@properties.1"/>
+                <index xsi:type="thingML:MinusExpression">
+                  <lhs xsi:type="thingML:PropertyReference" property="//@types.1/@messages.1/@parameters.0"/>
+                  <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                </index>
+              </lhs>
+              <rhs xsi:type="thingML:IntegerLiteral" intValue="3"/>
+            </condition>
+            <action xsi:type="thingML:ActionBlock">
+              <actions xsi:type="thingML:SendAction" port="//@types.2/@ports.0" message="//@types.1/@messages.1">
+                <parameters xsi:type="thingML:ExternExpression" expression="'\'C\''"/>
+              </actions>
+            </action>
+          </actions>
+        </entry>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

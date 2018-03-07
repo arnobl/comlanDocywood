@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_U5uWUSIAEeiAL8P_4o8blA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_U5vkcCIAEeiAL8P_4o8blA" name="The serie of documentations for Kompren">
+    <node xmi:type="uml:InitialNode" xmi:id="_U5vkcSIAEeiAL8P_4o8blA" name="init" outgoing="_U5vkkyIAEeiAL8P_4o8blA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkciIAEeiAL8P_4o8blA" name="Defining a Slicer" outgoing="_U5vklCIAEeiAL8P_4o8blA _U5vklSIAEeiAL8P_4o8blA _U5vkliIAEeiAL8P_4o8blA _U5vklyIAEeiAL8P_4o8blA _U5vkmCIAEeiAL8P_4o8blA _U5vkmSIAEeiAL8P_4o8blA _U5vkniIAEeiAL8P_4o8blA" incoming="_U5vkkyIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkcyIAEeiAL8P_4o8blA" name="kompren.Slicer"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkdCIAEeiAL8P_4o8blA" name="Defining a strict Slicer" outgoing="_U5vkoCIAEeiAL8P_4o8blA" incoming="_U5vklCIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkdSIAEeiAL8P_4o8blA" name="kompren.Slicer.strict"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkdiIAEeiAL8P_4o8blA" name="Defining a helper Slicer" outgoing="_U5vkoSIAEeiAL8P_4o8blA" incoming="_U5vklSIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkdyIAEeiAL8P_4o8blA" name="kompren.Slicer.helper"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkeCIAEeiAL8P_4o8blA" name="Defining a onStart Slicer" outgoing="_U5vkoiIAEeiAL8P_4o8blA" incoming="_U5vkliIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkeSIAEeiAL8P_4o8blA" name="kompren.Slicer.onStart"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkeiIAEeiAL8P_4o8blA" name="Defining a onEnd Slicer" outgoing="_U5vkoyIAEeiAL8P_4o8blA" incoming="_U5vklyIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkeyIAEeiAL8P_4o8blA" name="kompren.Slicer.onEnd"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkfCIAEeiAL8P_4o8blA" name="Defining a Radius" outgoing="_U5vkpCIAEeiAL8P_4o8blA" incoming="_U5vkmCIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkfSIAEeiAL8P_4o8blA" name="kompren.Radius"/>
+      <inputValue xmi:id="_U5vkfiIAEeiAL8P_4o8blA" name="kompren.Slicer.radius"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkfyIAEeiAL8P_4o8blA" name="Defining a SlicedClass" outgoing="_U5vkmiIAEeiAL8P_4o8blA _U5vkmyIAEeiAL8P_4o8blA _U5vknCIAEeiAL8P_4o8blA _U5vknSIAEeiAL8P_4o8blA" incoming="_U5vkmSIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkgCIAEeiAL8P_4o8blA" name="kompren.SlicedClass"/>
+      <inputValue xmi:id="_U5vkgSIAEeiAL8P_4o8blA" name="kompren.Slicer.slicedElements"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkgiIAEeiAL8P_4o8blA" name="Defining a isOption SlicedElement" outgoing="_U5vkpSIAEeiAL8P_4o8blA" incoming="_U5vkmiIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkgyIAEeiAL8P_4o8blA" name="kompren.SlicedElement.isOption"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkhCIAEeiAL8P_4o8blA" name="Defining a expression SlicedElement" outgoing="_U5vkpiIAEeiAL8P_4o8blA" incoming="_U5vkmyIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkhSIAEeiAL8P_4o8blA" name="kompren.SlicedElement.expression"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkhiIAEeiAL8P_4o8blA" name="Defining a Constraint" outgoing="_U5vkpyIAEeiAL8P_4o8blA" incoming="_U5vknCIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkhyIAEeiAL8P_4o8blA" name="kompren.Constraint"/>
+      <inputValue xmi:id="_U5vkiCIAEeiAL8P_4o8blA" name="kompren.SlicedElement.constraints"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkiSIAEeiAL8P_4o8blA" name="Defining a VarDecl" outgoing="_U5vkqCIAEeiAL8P_4o8blA" incoming="_U5vknSIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkiiIAEeiAL8P_4o8blA" name="kompren.VarDecl"/>
+      <inputValue xmi:id="_U5vkiyIAEeiAL8P_4o8blA" name="kompren.SlicedClass.ctx"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkjCIAEeiAL8P_4o8blA" name="Defining a SlicedProperty" outgoing="_U5vknyIAEeiAL8P_4o8blA" incoming="_U5vkniIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkjSIAEeiAL8P_4o8blA" name="kompren.SlicedProperty"/>
+      <inputValue xmi:id="_U5vkjiIAEeiAL8P_4o8blA" name="kompren.Slicer.slicedElements"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U5vkjyIAEeiAL8P_4o8blA" name="Defining a OppositeCreation" outgoing="_U5vkqSIAEeiAL8P_4o8blA" incoming="_U5vknyIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U5vkkCIAEeiAL8P_4o8blA" name="kompren.OppositeCreation"/>
+      <inputValue xmi:id="_U5vkkSIAEeiAL8P_4o8blA" name="kompren.SlicedProperty.opposite"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_U5vkkiIAEeiAL8P_4o8blA" name="end" incoming="_U5vkoCIAEeiAL8P_4o8blA _U5vkoSIAEeiAL8P_4o8blA _U5vkoiIAEeiAL8P_4o8blA _U5vkoyIAEeiAL8P_4o8blA _U5vkpCIAEeiAL8P_4o8blA _U5vkpSIAEeiAL8P_4o8blA _U5vkpiIAEeiAL8P_4o8blA _U5vkpyIAEeiAL8P_4o8blA _U5vkqCIAEeiAL8P_4o8blA _U5vkqSIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkkyIAEeiAL8P_4o8blA" source="_U5vkcSIAEeiAL8P_4o8blA" target="_U5vkciIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vklCIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkdCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vklSIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkdiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkliIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkeCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vklyIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkeiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkmCIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkfCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkmSIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkfyIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkmiIAEeiAL8P_4o8blA" source="_U5vkfyIAEeiAL8P_4o8blA" target="_U5vkgiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkmyIAEeiAL8P_4o8blA" source="_U5vkfyIAEeiAL8P_4o8blA" target="_U5vkhCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vknCIAEeiAL8P_4o8blA" source="_U5vkfyIAEeiAL8P_4o8blA" target="_U5vkhiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vknSIAEeiAL8P_4o8blA" source="_U5vkfyIAEeiAL8P_4o8blA" target="_U5vkiSIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkniIAEeiAL8P_4o8blA" source="_U5vkciIAEeiAL8P_4o8blA" target="_U5vkjCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vknyIAEeiAL8P_4o8blA" source="_U5vkjCIAEeiAL8P_4o8blA" target="_U5vkjyIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkoCIAEeiAL8P_4o8blA" source="_U5vkdCIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkoSIAEeiAL8P_4o8blA" source="_U5vkdiIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkoiIAEeiAL8P_4o8blA" source="_U5vkeCIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkoyIAEeiAL8P_4o8blA" source="_U5vkeiIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkpCIAEeiAL8P_4o8blA" source="_U5vkfCIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkpSIAEeiAL8P_4o8blA" source="_U5vkgiIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkpiIAEeiAL8P_4o8blA" source="_U5vkhCIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkpyIAEeiAL8P_4o8blA" source="_U5vkhiIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkqCIAEeiAL8P_4o8blA" source="_U5vkiSIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U5vkqSIAEeiAL8P_4o8blA" source="_U5vkjyIAEeiAL8P_4o8blA" target="_U5vkkiIAEeiAL8P_4o8blA"/>
+  </packagedElement>
+</uml:Model>

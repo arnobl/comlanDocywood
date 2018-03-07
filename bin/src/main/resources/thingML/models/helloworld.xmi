@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <types xsi:type="thingML:ObjectType" name="String">
+    <annotations name="c_type" value="&quot;char *&quot;"/>
+    <annotations name="c_byte_size" value="&quot;*&quot;"/>
+    <annotations name="js_type" value="&quot;String&quot;"/>
+    <annotations name="java_type" value="&quot;String&quot;"/>
+    <annotations name="SenML_type" value="&quot;String&quot;"/>
+  </types>
+  <types xsi:type="thingML:Thing" name="BasicHello">
+    <behaviour name="behavior" initial="//@types.1/@behaviour.0/@substate.0" history="true">
+      <substate name="hello">
+        <entry xsi:type="thingML:PrintAction">
+          <msg xsi:type="thingML:StringLiteral" stringValue="&quot;hello&quot;"/>
+        </entry>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

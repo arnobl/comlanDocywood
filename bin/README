@@ -1,0 +1,16 @@
+
+# requirements: java 8
+
+
+# Execution
+# Kompren
+java -cp docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceKomprenDoc
+
+# Robot
+java -cp docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceRobotDoc
+
+# TPD
+java -cp docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceTPDDoc
+
+# ThingML
+java -cp docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceThingMLDoc

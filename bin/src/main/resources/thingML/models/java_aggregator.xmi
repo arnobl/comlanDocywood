@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../../datatypes.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="JavaMathAgg" fragment="true">
+    <functions name="sumByte">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="sum">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LoopAction">
+          <condition xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.1">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+                <rhs xsi:type="thingML:ArrayIndex">
+                  <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                  <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                </rhs>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="sumInteger">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="sum">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LoopAction">
+          <condition xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.1">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+                <rhs xsi:type="thingML:ArrayIndex">
+                  <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                  <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                </rhs>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="sumLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="sum">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LoopAction">
+          <condition xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.1">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+                <rhs xsi:type="thingML:ArrayIndex">
+                  <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                  <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                </rhs>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="sumLongLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="sum">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LoopAction">
+          <condition xsi:type="thingML:LowerExpression">
+            <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.1">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+                <rhs xsi:type="thingML:ArrayIndex">
+                  <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                  <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                </rhs>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+              <expression xsi:type="thingML:PlusExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+              </expression>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="avgByte">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:DivExpression">
+            <lhs xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.0">
+              <parameters xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="avgInteger">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:DivExpression">
+            <lhs xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.1">
+              <parameters xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="avgLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:DivExpression">
+            <lhs xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.2">
+              <parameters xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="avgLongLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:DivExpression">
+            <lhs xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.3">
+              <parameters xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+            </lhs>
+            <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </rhs>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="maxByte">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="max">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:GreaterExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="maxInteger">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="max">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:GreaterExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="maxLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="max">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:GreaterExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="maxLongLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="max">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:GreaterExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.8/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.8/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="minByte">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="min">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:LowerExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="minInteger">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="min">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:LowerExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="minLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="min">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:LowerExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="minLongLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:LocalVariable" name="index">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+          </typeRef>
+          <init xsi:type="thingML:IntegerLiteral"/>
+        </actions>
+        <actions xsi:type="thingML:LocalVariable" name="min">
+          <typeRef>
+            <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+          </typeRef>
+        </actions>
+        <actions xsi:type="thingML:ConditionalAction">
+          <condition xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+              <parameter xsi:type="thingML:LengthArray"/>
+            </lhs>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </condition>
+          <action xsi:type="thingML:ActionBlock">
+            <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+              <expression xsi:type="thingML:ArrayIndex">
+                <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                <index xsi:type="thingML:IntegerLiteral"/>
+              </expression>
+            </actions>
+            <actions xsi:type="thingML:LoopAction">
+              <condition xsi:type="thingML:LowerExpression">
+                <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                <rhs xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+                  <parameter xsi:type="thingML:LengthArray"/>
+                </rhs>
+              </condition>
+              <action xsi:type="thingML:ActionBlock">
+                <actions xsi:type="thingML:ConditionalAction">
+                  <condition xsi:type="thingML:LowerExpression">
+                    <lhs xsi:type="thingML:ArrayIndex">
+                      <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                      <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    </lhs>
+                    <rhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+                  </condition>
+                  <action xsi:type="thingML:ActionBlock">
+                    <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.12/@body/@actions.1">
+                      <expression xsi:type="thingML:ArrayIndex">
+                        <array xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@parameters.0"/>
+                        <index xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                      </expression>
+                    </actions>
+                  </action>
+                </actions>
+                <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@functions.0/@body/@actions.0">
+                  <expression xsi:type="thingML:PlusExpression">
+                    <lhs xsi:type="thingML:PropertyReference" property="//@types.0/@functions.0/@body/@actions.0"/>
+                    <rhs xsi:type="thingML:IntegerLiteral" intValue="1"/>
+                  </expression>
+                </actions>
+              </action>
+            </actions>
+          </action>
+        </actions>
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@functions.12/@body/@actions.1"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="countByte">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.13"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+            <parameter xsi:type="thingML:LengthArray"/>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="countInteger">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+            <parameter xsi:type="thingML:LengthArray"/>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="countLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.9"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+            <parameter xsi:type="thingML:LengthArray"/>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+    <functions name="countLongLong">
+      <parameters name="tab">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../datatypes.thingml#//@types.17"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:Reference" reference="//@types.0/@functions.0/@parameters.0">
+            <parameter xsi:type="thingML:LengthArray"/>
+          </exp>
+        </actions>
+      </body>
+    </functions>
+  </types>
+</thingML:ThingMLModel>

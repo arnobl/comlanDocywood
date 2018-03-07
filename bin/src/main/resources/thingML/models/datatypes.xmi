@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <types xsi:type="thingML:PrimitiveType" name="Byte" ByteSize="1">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;uint8_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;1&quot;"/>
+    <annotations name="java_type" value="&quot;byte&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Byte&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Boolean" ByteSize="1">
+    <annotations name="type_checker" value="&quot;Boolean&quot;"/>
+    <annotations name="c_type" value="&quot;uint8_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;2&quot;"/>
+    <annotations name="java_type" value="&quot;boolean&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Boolean&quot;"/>
+    <annotations name="SenML_type" value="&quot;Boolean&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Integer" ByteSize="2">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;int&quot;"/>
+    <annotations name="c_byte_size" value="&quot;2&quot;"/>
+    <annotations name="java_type" value="&quot;short&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Short&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+    <annotations name="ros_type" value="&quot;int16&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="UInt8" ByteSize="1">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;uint8_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;1&quot;"/>
+    <annotations name="java_type" value="&quot;byte&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Byte&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Int8" ByteSize="1">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;int8_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;1&quot;"/>
+    <annotations name="java_type" value="&quot;byte&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Byte&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="UInt16" ByteSize="2">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;uint16_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;2&quot;"/>
+    <annotations name="java_type" value="&quot;short&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Short&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Int16" ByteSize="2">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;int&quot;"/>
+    <annotations name="c_byte_size" value="&quot;2&quot;"/>
+    <annotations name="java_type" value="&quot;short&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Short&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="UInt32" ByteSize="4">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;uint32_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;4&quot;"/>
+    <annotations name="java_type" value="&quot;int&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Int32" ByteSize="4">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;int32_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;4&quot;"/>
+    <annotations name="java_type" value="&quot;int&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="UInt64" ByteSize="8">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;uint64_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;8&quot;"/>
+    <annotations name="java_type" value="&quot;long&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Int64" ByteSize="8">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;int64_t&quot;"/>
+    <annotations name="c_byte_size" value="&quot;8&quot;"/>
+    <annotations name="java_type" value="&quot;long&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Long" ByteSize="4">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;long&quot;"/>
+    <annotations name="c_byte_size" value="&quot;4&quot;"/>
+    <annotations name="java_type" value="&quot;int&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Int&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="ULong" ByteSize="4">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;unsigned long&quot;"/>
+    <annotations name="c_byte_size" value="&quot;4&quot;"/>
+    <annotations name="java_type" value="&quot;int&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Int&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Double" ByteSize="4">
+    <annotations name="type_checker" value="&quot;Real&quot;"/>
+    <annotations name="c_type" value="&quot;double&quot;"/>
+    <annotations name="c_byte_size" value="&quot;4&quot;"/>
+    <annotations name="java_type" value="&quot;float&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Float&quot;"/>
+    <annotations name="SenML_type" value="&quot;Double&quot;"/>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="Char" ByteSize="1">
+    <annotations name="type_checker" value="&quot;String&quot;"/>
+    <annotations name="c_type" value="&quot;char&quot;"/>
+    <annotations name="c_byte_size" value="&quot;1&quot;"/>
+    <annotations name="java_type" value="&quot;char&quot;"/>
+    <annotations name="js_type" value="&quot;char&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Character&quot;"/>
+    <annotations name="SenML_type" value="&quot;String&quot;"/>
+  </types>
+  <types xsi:type="thingML:ObjectType" name="String">
+    <annotations name="type_checker" value="&quot;String&quot;"/>
+    <annotations name="c_type" value="&quot;char *&quot;"/>
+    <annotations name="c_byte_size" value="&quot;*&quot;"/>
+    <annotations name="java_type" value="&quot;String&quot;"/>
+    <annotations name="js_type" value="&quot;String&quot;"/>
+    <annotations name="SenML_type" value="&quot;String&quot;"/>
+  </types>
+  <types xsi:type="thingML:Enumeration" name="DigitalState">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="java_type" value="&quot;byte&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+    <annotations name="scala_type" value="&quot;Byte&quot;"/>
+    <annotations name="c_byte_size" value="&quot;1&quot;"/>
+    <annotations name="c_type" value="&quot;uint8_t&quot;"/>
+    <literals name="LOW">
+      <annotations name="enum_val" value="&quot;0&quot;"/>
+    </literals>
+    <literals name="HIGH">
+      <annotations name="enum_val" value="&quot;1&quot;"/>
+    </literals>
+  </types>
+  <types xsi:type="thingML:PrimitiveType" name="LongLong" ByteSize="8">
+    <annotations name="type_checker" value="&quot;Integer&quot;"/>
+    <annotations name="c_type" value="&quot;long long&quot;"/>
+    <annotations name="c_byte_size" value="&quot;8&quot;"/>
+    <annotations name="java_type" value="&quot;long&quot;"/>
+    <annotations name="java_primitive" value="&quot;true&quot;"/>
+  </types>
+</thingML:ThingMLModel>
