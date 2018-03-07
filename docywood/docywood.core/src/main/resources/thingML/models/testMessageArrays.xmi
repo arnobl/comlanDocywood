@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../thingml.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="ArrayMsg" fragment="true">
+    <messages name="mArray">
+      <parameters name="Ar">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+          <cardinality xsi:type="thingML:IntegerLiteral" intValue="4"/>
+        </typeRef>
+      </parameters>
+    </messages>
+  </types>
+  <types xsi:type="thingML:Thing" name="TestMessageArrays">
+    <annotations name="test" value="&quot;x # ABCD&quot;"/>
+    <annotations name="conf" value="&quot;instance D : SendArray&quot;"/>
+    <annotations name="conf" value="&quot;connector test.p => D.p&quot;"/>
+    <includes href="../core/test.thingml#//@types.2"/>
+    <includes href="#//@types.0"/>
+    <ports xsi:type="thingML:RequiredPort" name="p" receives="//@types.0/@messages.0"/>
+    <functions name="f">
+      <parameters name="Ar">
+        <typeRef isArray="true">
+          <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+          <cardinality xsi:type="thingML:IntegerLiteral" intValue="4"/>
+        </typeRef>
+      </parameters>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ArrayIndex">
+            <array xsi:type="thingML:PropertyReference" property="//@types.0/@messages.0/@parameters.0"/>
+            <index xsi:type="thingML:IntegerLiteral"/>
+          </parameters>
+        </actions>
+        <actions xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ArrayIndex">
+            <array xsi:type="thingML:PropertyReference" property="//@types.0/@messages.0/@parameters.0"/>
+            <index xsi:type="thingML:IntegerLiteral" intValue="1"/>
+          </parameters>
+        </actions>
+        <actions xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ArrayIndex">
+            <array xsi:type="thingML:PropertyReference" property="//@types.0/@messages.0/@parameters.0"/>
+            <index xsi:type="thingML:IntegerLiteral" intValue="2"/>
+          </parameters>
+        </actions>
+        <actions xsi:type="thingML:SendAction">
+          <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.xmi#//@types.2/@ports.0"/>
+          <message href="../../thingml/core/test.xmi#//@types.0/@messages.1"/>
+          <parameters xsi:type="thingML:ArrayIndex">
+            <array xsi:type="thingML:PropertyReference" property="//@types.0/@messages.0/@parameters.0"/>
+            <index xsi:type="thingML:IntegerLiteral" intValue="3"/>
+          </parameters>
+        </actions>
+      </body>
+    </functions>
+    <behaviour name="TestArrays" initial="//@types.1/@behaviour.0/@substate.0">
+      <substate name="S0">
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="e" port="//@types.1/@ports.0" message="//@types.0/@messages.0"/>
+          <action xsi:type="thingML:FunctionCallStatement" function="//@types.1/@functions.0">
+            <parameters xsi:type="thingML:Reference" reference="//@types.1/@behaviour.0/@substate.0/@internal.0/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef" parameterRef="//@types.0/@messages.0/@parameters.0"/>
+            </parameters>
+          </action>
+        </internal>
+      </substate>
+    </behaviour>
+  </types>
+  <types xsi:type="thingML:Thing" name="SendArray" includes="//@types.0">
+    <ports xsi:type="thingML:ProvidedPort" name="p" sends="//@types.0/@messages.0"/>
+    <properties name="array">
+      <typeRef isArray="true">
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+        <cardinality xsi:type="thingML:IntegerLiteral" intValue="4"/>
+      </typeRef>
+    </properties>
+    <assign property="//@types.2/@properties.0">
+      <index xsi:type="thingML:IntegerLiteral"/>
+      <init xsi:type="thingML:ExternExpression" expression="'\'A\''"/>
+    </assign>
+    <assign property="//@types.2/@properties.0">
+      <index xsi:type="thingML:IntegerLiteral" intValue="1"/>
+      <init xsi:type="thingML:ExternExpression" expression="'\'B\''"/>
+    </assign>
+    <assign property="//@types.2/@properties.0">
+      <index xsi:type="thingML:IntegerLiteral" intValue="2"/>
+      <init xsi:type="thingML:ExternExpression" expression="'\'C\''"/>
+    </assign>
+    <assign property="//@types.2/@properties.0">
+      <index xsi:type="thingML:IntegerLiteral" intValue="3"/>
+      <init xsi:type="thingML:ExternExpression" expression="'\'D\''"/>
+    </assign>
+    <behaviour name="TestArrays" initial="//@types.1/@behaviour.0/@substate.0">
+      <substate name="S0">
+        <entry xsi:type="thingML:SendAction" port="//@types.1/@ports.0" message="//@types.0/@messages.0">
+          <parameters xsi:type="thingML:PropertyReference" property="//@types.2/@properties.0"/>
+        </entry>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

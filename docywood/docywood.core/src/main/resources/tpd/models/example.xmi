@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<targetplatform:TargetPlatform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:targetplatform="fr.obeo.releng.targetplatform" name="Sample Target Platform">
+  <contents xsi:type="targetplatform:IncludeDeclaration" importURI="base.tpd"/>
+  <contents xsi:type="targetplatform:Options">
+    <options>source</options>
+    <options>requirements</options>
+  </contents>
+  <contents xsi:type="targetplatform:Environment">
+    <env>linux</env>
+    <env>gtk</env>
+  </contents>
+  <contents xsi:type="targetplatform:Location" ID="kepler" uri="http://download.eclipse.org/releases/kepler">
+    <ius ID="org.eclipse.pde" version="[3.8.100,3.8.101)"/>
+    <ius ID="org.eclipse.equinox.p2.sdk.feature.group"/>
+  </contents>
+  <contents xsi:type="targetplatform:Location" uri="http://download.eclipse.org/modeling/emf/emf/updates/releases/">
+    <ius ID="org.eclipse.emf" version="[2.6.0,2.6.1)"/>
+  </contents>
+</targetplatform:TargetPlatform>

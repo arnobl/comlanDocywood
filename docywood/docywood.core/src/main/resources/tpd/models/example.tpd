@@ -1,0 +1,16 @@
+target "Sample Target Platform"
+
+include "base.tpd"
+
+with source, requirements
+
+environment linux, gtk
+
+location kepler "http://download.eclipse.org/releases/kepler" {
+	org.eclipse.pde [3.8.100,3.8.101)
+	org.eclipse.equinox.p2.sdk.feature.group 
+}
+
+location "http://download.eclipse.org/modeling/emf/emf/updates/releases/" {
+	org.eclipse.emf [2.6.0,2.6.1)
+}

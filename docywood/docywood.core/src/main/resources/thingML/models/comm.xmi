@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../comm.thingml&quot;"/>
+  <imports importURI="&quot;../scheduler.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="SerialArduino">
+    <annotations name="pim" value="&quot;Serial&quot;"/>
+    <annotations name="platform" value="&quot;arduino&quot;"/>
+    <annotations name="singleton" value="&quot;true&quot;"/>
+    <includes href="../comm.thingml#//@types.9"/>
+    <includes href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.15"/>
+    <ports xsi:type="thingML:RequiredPort" name="Polling">
+      <receives href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.15/@messages.1"/>
+    </ports>
+    <behaviour name="SerialImpl" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="Receiving">
+        <entry xsi:type="thingML:ExternStatement" statement="'Serial.begin(9600);'"/>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" port="//@types.0/@ports.0">
+            <message href="../../studies/Snake/_Common/_Datatypes.thingml#//@types.15/@messages.1"/>
+          </event>
+          <guard xsi:type="thingML:GreaterExpression">
+            <lhs xsi:type="thingML:ExternExpression" expression="'Serial.available()'"/>
+            <rhs xsi:type="thingML:IntegerLiteral"/>
+          </guard>
+          <action xsi:type="thingML:SendAction">
+            <port xsi:type="thingML:ProvidedPort" href="../comm.thingml#//@types.5/@ports.0"/>
+            <message href="../comm.thingml#//@types.0/@messages.0"/>
+            <parameters xsi:type="thingML:ExternExpression" expression="'(char)Serial.read()'"/>
+          </action>
+        </internal>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="m">
+            <port xsi:type="thingML:ProvidedPort" href="../comm.thingml#//@types.5/@ports.0"/>
+            <message href="../comm.thingml#//@types.1/@messages.0"/>
+          </event>
+          <action xsi:type="thingML:ExternStatement" statement="'Serial.print('">
+            <segments xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.1/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef">
+                <parameterRef href="../../cep/DemoBrice-14Aug/cepFilter.thingml#//@types.2/@messages.1/@parameters.1"/>
+              </parameter>
+            </segments>
+            <segments xsi:type="thingML:ExternExpression" expression="');'"/>
+          </action>
+        </internal>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="m">
+            <port xsi:type="thingML:ProvidedPort" href="../comm.thingml#//@types.9/@ports.0"/>
+            <message href="../comm.thingml#//@types.4/@messages.0"/>
+          </event>
+          <action xsi:type="thingML:ExternStatement" statement="'Serial.print('">
+            <segments xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.1/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef">
+                <parameterRef href="../../studies/Snake/1_8pLCD/_1_8pLCD.thingml#//@types.0/@messages.5/@parameters.0"/>
+              </parameter>
+            </segments>
+            <segments xsi:type="thingML:ExternExpression" expression="');'"/>
+          </action>
+        </internal>
+        <internal>
+          <event xsi:type="thingML:ReceiveMessage" name="m">
+            <port xsi:type="thingML:ProvidedPort" href="../comm.thingml#//@types.9/@ports.0"/>
+            <message href="../comm.thingml#//@types.4/@messages.1"/>
+          </event>
+          <action xsi:type="thingML:ExternStatement" statement="'Serial.print('">
+            <segments xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@substate.0/@internal.1/@event.0">
+              <parameter xsi:type="thingML:SimpleParamRef">
+                <parameterRef href="../../studies/sim2d/sim2D.thingml#//@types.0/@messages.1/@parameters.4"/>
+              </parameter>
+            </segments>
+            <segments xsi:type="thingML:ExternExpression" expression="', DEC);'"/>
+          </action>
+        </internal>
+      </substate>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>

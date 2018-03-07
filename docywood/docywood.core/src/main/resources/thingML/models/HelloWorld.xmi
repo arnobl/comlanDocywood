@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <types xsi:type="thingML:Thing" name="HelloWorldThing">
+    <behaviour name="HelloWorldChart" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="Init">
+        <entry xsi:type="thingML:ActionBlock">
+          <actions xsi:type="thingML:PrintAction">
+            <msg xsi:type="thingML:StringLiteral" stringValue="&quot;Hello World!&quot;"/>
+          </actions>
+        </entry>
+      </substate>
+    </behaviour>
+  </types>
+  <configs name="HelloWorldCfg">
+    <annotations name="docker" value="&quot;true&quot;"/>
+    <instances name="HelloWorldInstance" type="//@types.0"/>
+  </configs>
+</thingML:ThingMLModel>

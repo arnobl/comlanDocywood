@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../datatypes.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="ErroneousThing">
+    <messages name="m1"/>
+    <messages name="m2">
+      <parameters name="i">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <messages name="m3">
+      <parameters name="i">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <parameters name="s">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../studies/jarduino/jarduino.thingml#//@types.2"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <ports xsi:type="thingML:ProvidedPort" name="myPort" sends="//@types.0/@messages.0" receives="//@types.0/@messages.1 //@types.0/@messages.2"/>
+    <ports xsi:type="thingML:RequiredPort" name="myPort2" receives="//@types.0/@messages.0"/>
+    <functions name="f1">
+      <parameters name="i">
+        <typeRef>
+          <type xsi:type="thingML:PrimitiveType" href="../incubator/DynThing/Timer.thingml#//@types.0"/>
+        </typeRef>
+      </parameters>
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../incubator/DynThing/Timer.thingml#//@types.0"/>
+      </typeRef>
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:ReturnAction">
+          <exp xsi:type="thingML:PropertyReference" property="//@types.0/@messages.1/@parameters.0"/>
+        </actions>
+      </body>
+    </functions>
+    <functions name="f2">
+      <body xsi:type="thingML:ActionBlock">
+        <actions xsi:type="thingML:PrintAction">
+          <msg xsi:type="thingML:StringLiteral" stringValue="&quot;hello&quot;"/>
+        </actions>
+      </body>
+    </functions>
+    <behaviour name="behavior" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="Init">
+        <entry xsi:type="thingML:ActionBlock">
+          <actions xsi:type="thingML:LocalVariable" name="i">
+            <typeRef>
+              <type xsi:type="thingML:PrimitiveType" href="../incubator/DynThing/Timer.thingml#//@types.0"/>
+            </typeRef>
+            <init xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.0">
+              <parameters xsi:type="thingML:StringLiteral" stringValue="&quot;1&quot;"/>
+            </init>
+          </actions>
+          <actions xsi:type="thingML:LocalVariable" name="s">
+            <typeRef>
+              <type xsi:type="thingML:ObjectType" href="../studies/jarduino/jarduino.thingml#//@types.2"/>
+            </typeRef>
+            <init xsi:type="thingML:FunctionCallExpression" function="//@types.0/@functions.0">
+              <parameters xsi:type="thingML:IntegerLiteral" intValue="1"/>
+            </init>
+          </actions>
+        </entry>
+      </substate>
+      <substate name="Unreachable"/>
+    </behaviour>
+  </types>
+  <configs name="test">
+    <instances name="bad" type="//@types.0"/>
+  </configs>
+</thingML:ThingMLModel>

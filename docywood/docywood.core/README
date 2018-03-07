@@ -1,0 +1,19 @@
+
+# requirements: maven >= 3, java 8
+
+
+# Compilation:
+mvn -DskipTests=true package
+
+# Execution
+# Kompren
+java -cp target/docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceKomprenDoc
+
+# Robot
+java -cp target/docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceRobotDoc
+
+# TPD
+java -cp target/docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceTPDDoc
+
+# ThingML
+java -cp target/docywood.core-0.0.1-SNAPSHOT.jar docywood.ProduceThingMLDoc

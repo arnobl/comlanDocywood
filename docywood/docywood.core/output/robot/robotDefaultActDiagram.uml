@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_U-4jICIAEeiAL8P_4o8blA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_U-4jISIAEeiAL8P_4o8blA" name="The serie of documentations for ProgramUnit">
+    <node xmi:type="uml:InitialNode" xmi:id="_U-4jIiIAEeiAL8P_4o8blA" name="init" outgoing="_U-4jLyIAEeiAL8P_4o8blA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U-4jIyIAEeiAL8P_4o8blA" name="Defining a ProgramUnit" outgoing="_U-4jMCIAEeiAL8P_4o8blA _U-4jMSIAEeiAL8P_4o8blA _U-4jMiIAEeiAL8P_4o8blA" incoming="_U-4jLyIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U-4jJCIAEeiAL8P_4o8blA" name="logo.ProgramUnit"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U-4jJSIAEeiAL8P_4o8blA" name="Defining a Move" outgoing="_U-4jMyIAEeiAL8P_4o8blA" incoming="_U-4jMCIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U-4jJiIAEeiAL8P_4o8blA" name="logo.Move"/>
+      <inputValue xmi:id="_U-4jJyIAEeiAL8P_4o8blA" name="logo.ProgramUnit.commands"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U-4jKCIAEeiAL8P_4o8blA" name="Defining a Turn" outgoing="_U-4jNCIAEeiAL8P_4o8blA" incoming="_U-4jMSIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U-4jKSIAEeiAL8P_4o8blA" name="logo.Turn"/>
+      <inputValue xmi:id="_U-4jKiIAEeiAL8P_4o8blA" name="logo.ProgramUnit.commands"/>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U-4jKyIAEeiAL8P_4o8blA" name="Defining a WhileNoObstacle" outgoing="_U-4jNSIAEeiAL8P_4o8blA" incoming="_U-4jMiIAEeiAL8P_4o8blA">
+      <inputValue xmi:id="_U-4jLCIAEeiAL8P_4o8blA" name="logo.WhileNoObstacle"/>
+      <inputValue xmi:id="_U-4jLSIAEeiAL8P_4o8blA" name="logo.ProgramUnit.commands"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_U-4jLiIAEeiAL8P_4o8blA" name="end" incoming="_U-4jMyIAEeiAL8P_4o8blA _U-4jNCIAEeiAL8P_4o8blA _U-4jNSIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jLyIAEeiAL8P_4o8blA" source="_U-4jIiIAEeiAL8P_4o8blA" target="_U-4jIyIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jMCIAEeiAL8P_4o8blA" source="_U-4jIyIAEeiAL8P_4o8blA" target="_U-4jJSIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jMSIAEeiAL8P_4o8blA" source="_U-4jIyIAEeiAL8P_4o8blA" target="_U-4jKCIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jMiIAEeiAL8P_4o8blA" source="_U-4jIyIAEeiAL8P_4o8blA" target="_U-4jKyIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jMyIAEeiAL8P_4o8blA" source="_U-4jJSIAEeiAL8P_4o8blA" target="_U-4jLiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jNCIAEeiAL8P_4o8blA" source="_U-4jKCIAEeiAL8P_4o8blA" target="_U-4jLiIAEeiAL8P_4o8blA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-4jNSIAEeiAL8P_4o8blA" source="_U-4jKyIAEeiAL8P_4o8blA" target="_U-4jLiIAEeiAL8P_4o8blA"/>
+  </packagedElement>
+</uml:Model>

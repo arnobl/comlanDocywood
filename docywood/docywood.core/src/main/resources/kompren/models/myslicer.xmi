@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kompren:Slicer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:kompren="http://kompren/fr.inria.diverse.kompren" name="Slicer1" helper="println(&quot;Defining the helper&quot;)&#xA;// data can be used in all the expressions of the slicer.&#xA;val data = newArrayList()" onStart="println(&quot;starting the slicing process!&quot;)" onEnd="println(&quot;ending the slicing process.&quot;)">
+  <uriMetamodel>platform:/resource/test/src/main/ex1.genmodel</uriMetamodel>
+  <radius>
+    <focusedClasses href="src/main/resources/kompren/models/ex1.ecore#//A"/>
+  </radius>
+  <slicedElements xsi:type="kompren:SlicedClass" expression="println(&quot;Slicing a &quot; + theA)">
+    <domain xsi:type="ecore:EClass" href="src/main/resources/kompren/models/ex1.ecore#//A"/>
+    <ctx varName="theA"/>
+  </slicedElements>
+  <slicedElements xsi:type="kompren:SlicedClass">
+    <domain xsi:type="ecore:EClass" href="src/main/resources/kompren/models/ex1.ecore#//D"/>
+    <constraints expression="theD.dAttr" name="checkDAttr"/>
+    <ctx varName="theD"/>
+  </slicedElements>
+  <slicedElements xsi:type="kompren:SlicedProperty" expression="println(&quot;slicing a property, from &quot; + src + &quot; to &quot; + tgt)">
+    <domain xsi:type="ecore:EReference" href="src/main/resources/kompren/models/ex1.ecore#//A/d"/>
+    <constraints expression="src.a1==1" name="aConstraint"/>
+    <src varName="src"/>
+    <tgt varName="tgt"/>
+  </slicedElements>
+  <slicedElements xsi:type="kompren:SlicedClass" isOption="true">
+    <domain xsi:type="ecore:EClass" href="src/main/resources/kompren/models/ex1.ecore#//G"/>
+  </slicedElements>
+  <slicedElements xsi:type="kompren:SlicedClass">
+    <domain xsi:type="ecore:EClass" href="src/main/resources/kompren/models/ex1.ecore#//C"/>
+  </slicedElements>
+  <slicedElements xsi:type="kompren:SlicedProperty">
+    <domain xsi:type="ecore:EReference" href="src/main/resources/kompren/models/ex1.ecore#//C/ce"/>
+    <opposite name="ceOpposite"/>
+  </slicedElements>
+  <inputClasses href="src/main/resources/kompren/models/ex1.ecore#//A"/>
+</kompren:Slicer>

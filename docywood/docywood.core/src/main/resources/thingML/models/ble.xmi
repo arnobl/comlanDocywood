@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../datatypes.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="BLEMsgs" fragment="true">
+    <messages name="stateChange">
+      <parameters name="st">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../datatypes.thingml#//@types.15"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <messages name="discover">
+      <parameters name="peripheral">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../datatypes.thingml#//@types.15"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <messages name="scanStart"/>
+    <messages name="scanStop"/>
+    <messages name="startScanning"/>
+    <messages name="stopScanning"/>
+    <messages name="connect">
+      <parameters name="peripheralId">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../datatypes.thingml#//@types.15"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <messages name="disconnect">
+      <parameters name="peripheralId">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../datatypes.thingml#//@types.15"/>
+        </typeRef>
+      </parameters>
+    </messages>
+    <messages name="discoverServices">
+      <parameters name="peripheralId">
+        <typeRef>
+          <type xsi:type="thingML:ObjectType" href="../datatypes.thingml#//@types.15"/>
+        </typeRef>
+      </parameters>
+    </messages>
+  </types>
+  <types xsi:type="thingML:Thing" name="BLEClient" fragment="true" includes="//@types.0">
+    <ports xsi:type="thingML:RequiredPort" name="BLE" sends="//@types.0/@messages.6 //@types.0/@messages.7 //@types.0/@messages.4 //@types.0/@messages.5 //@types.0/@messages.8" receives="//@types.0/@messages.0 //@types.0/@messages.1 //@types.0/@messages.2 //@types.0/@messages.3">
+      <annotations name="sync_send" value="&quot;true&quot;"/>
+    </ports>
+  </types>
+  <types xsi:type="thingML:Thing" name="BLEServer" fragment="true" includes="//@types.0">
+    <ports xsi:type="thingML:ProvidedPort" name="BLE" sends="//@types.0/@messages.0 //@types.0/@messages.1 //@types.0/@messages.2 //@types.0/@messages.3" receives="//@types.0/@messages.6 //@types.0/@messages.7 //@types.0/@messages.4 //@types.0/@messages.5 //@types.0/@messages.8"/>
+  </types>
+  <types xsi:type="thingML:Thing" name="BLEServerInternal" fragment="true" includes="//@types.0">
+    <ports xsi:type="thingML:ProvidedPort" name="BLEInternal" sends="//@types.0/@messages.0 //@types.0/@messages.1 //@types.0/@messages.2 //@types.0/@messages.3"/>
+    <ports xsi:type="thingML:RequiredPort" name="BLEInternalRec" receives="//@types.0/@messages.0 //@types.0/@messages.1 //@types.0/@messages.2 //@types.0/@messages.3"/>
+  </types>
+</thingML:ThingMLModel>

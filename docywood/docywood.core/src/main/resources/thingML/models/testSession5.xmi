@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<thingML:ThingMLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:thingML="http://www.thingml.org/xtext/ThingML">
+  <imports importURI="&quot;../thingml.thingml&quot;"/>
+  <types xsi:type="thingML:Thing" name="TestSession5">
+    <annotations name="test" value="&quot;ABC # (ABC|ACB|BAC|BCA|CAB|CBA)&quot;"/>
+    <includes href="../core/test.thingml#//@types.2"/>
+    <properties name="ID">
+      <typeRef>
+        <type xsi:type="thingML:PrimitiveType" href="../../thingml/studies/Snake/_Common/_Datatypes.thingml#//@types.0"/>
+      </typeRef>
+      <init xsi:type="thingML:ExternExpression" expression="'\'M\''"/>
+    </properties>
+    <behaviour name="Chart" initial="//@types.0/@behaviour.0/@substate.0">
+      <substate name="A"/>
+      <region name="R" initial="//@types.0/@behaviour.0/@region.0/@substate.0">
+        <substate name="INIT">
+          <internal>
+            <event xsi:type="thingML:ReceiveMessage" name="e">
+              <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.thingml#//@types.2/@ports.1"/>
+              <message href="../../thingml/core/test.thingml#//@types.0/@messages.0"/>
+            </event>
+            <action xsi:type="thingML:ActionBlock">
+              <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+                <expression xsi:type="thingML:Reference" reference="//@types.0/@behaviour.0/@region.0/@substate.0/@internal.0/@event.0">
+                  <parameter xsi:type="thingML:SimpleParamRef">
+                    <parameterRef href="../Others/testInstanceInitializationOrder.xmi#//@types.0/@messages.0/@parameters.0"/>
+                  </parameter>
+                </expression>
+              </actions>
+              <actions xsi:type="thingML:StartSession" session="//@types.0/@behaviour.0/@region.0/@substate.1"/>
+              <actions xsi:type="thingML:VariableAssignment" property="//@types.0/@properties.0">
+                <expression xsi:type="thingML:ExternExpression" expression="'\'M\''"/>
+              </actions>
+            </action>
+          </internal>
+        </substate>
+        <substate xsi:type="thingML:Session" name="s" maxInstances="5" initial="//@types.0/@behaviour.0/@region.0/@substate.1/@substate.0">
+          <substate xsi:type="thingML:FinalState" name="S1">
+            <entry xsi:type="thingML:SendAction">
+              <port xsi:type="thingML:RequiredPort" href="../../thingml/core/test.thingml#//@types.2/@ports.0"/>
+              <message href="../../thingml/core/test.thingml#//@types.0/@messages.1"/>
+              <parameters xsi:type="thingML:PropertyReference" property="//@types.0/@properties.0"/>
+            </entry>
+          </substate>
+        </substate>
+      </region>
+    </behaviour>
+  </types>
+</thingML:ThingMLModel>
