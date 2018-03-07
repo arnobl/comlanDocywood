@@ -1,3 +1,9 @@
+Binaries are located in the folder "bin".<br/>
+Sources are located in the folder "docywood".<br/>
+The Eclipse plugins used for the experiments are located in "experiments/eclipsePlugins".<br/>
+The documents used during the experiments are located in "experiments".<br/>
+The data and the R script of the experiments are located in "experiments/data".<br/>
+
 
 The Kompren tutorials are available on the [official web page of the Kompren DSL](https://github.com/arnobl/kompren).
 
