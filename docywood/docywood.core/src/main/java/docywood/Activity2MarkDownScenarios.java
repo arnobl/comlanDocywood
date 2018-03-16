@@ -7,8 +7,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import org.eclipse.emf.common.util.EList;
@@ -33,34 +35,62 @@ public class Activity2MarkDownScenarios {
 	private final String outputPath;
 	private final EPackage rootPkg;
 	private final EClass rootClass;
+	private final Map<String, String> docs;
 
-	public Activity2MarkDownScenarios(final EPackage root, final String aModelPath, final Activity umlActivity, Grammar theGrammar, final String output) {
+	Activity2MarkDownScenarios(final EPackage root, final String aModelPath, final Activity umlActivity, Grammar theGrammar, final String output,
+							   final EClass rootClazz) {
 		super();
 		modelFolder = aModelPath;
 		activity = umlActivity;
 		grammar = theGrammar;
 		outputPath = output;
 		rootPkg = root;
-		rootClass = Docywood.getRootClasses(Collections.singletonList(rootPkg)).iterator().next();
+		docs = new HashMap<>();
+		rootClass = rootClazz;
 	}
 
+	public Activity2MarkDownScenarios(final EPackage root, final String aModelPath, final Activity umlActivity, Grammar theGrammar, final String output) {
+		this(root, aModelPath, umlActivity, theGrammar, output, Docywood.getRootClasses(Collections.singletonList(root)).iterator().next());
+	}
 
 	public Activity2MarkDownScenarios(final String rootClassName, final EPackage root, final String aModelFolder, final Activity umlActivity,
 									  Grammar theGrammar, final String output) {
-		super();
-		modelFolder = aModelFolder;
-		activity = umlActivity;
-		grammar = theGrammar;
-		outputPath = output;
-		rootPkg = root;
-		rootClass = (EClass) rootPkg.getEClassifiers().parallelStream().filter(cl -> cl instanceof EClass && cl.getName().equals(rootClassName)).
-			findAny().orElseThrow(IllegalArgumentException::new);
+		this(root, aModelFolder, umlActivity, theGrammar, output,
+			(EClass) root.getEClassifiers().parallelStream().filter(cl -> cl instanceof EClass && cl.getName().equals(rootClassName)).
+				findAny().orElseThrow(IllegalArgumentException::new));
 	}
 
 
 	public void produce() {
 		ActivityNode init = activity.getNodes().stream().filter(n -> n instanceof InitialNode).findAny().get();
 		init.getOutgoings().forEach(edge -> produceScenarioFromNode((OpaqueAction) edge.getTarget(), new HashSet<>(), new ArrayList<>()));
+		produceXtextFragment();
+	}
+
+
+	private void produceXtextFragment() {
+		final String xtextcode = docs.entrySet().stream().map(doc -> {
+			String doctxt = doc.getValue();
+			if(doctxt.contains("See also:<br/>")) {
+				doctxt = doctxt.substring(0, doc.getValue().indexOf("See also:<br/>") - 1);
+			}
+			return "map.put(\"" + doc.getKey() + "\", \"" + doctxt.substring(doctxt.indexOf('\n') + 2).replaceAll("\"", "\\\"") + "\")";
+		}).
+			collect(Collectors.joining("\n\n",
+				"// Copy paste this code into the ProposalProvider.xtend file of your xtext project\n" +
+					"// You may have to change the keys of the generated map to match the tokens of the grammar you want\n\n" +
+					"val static values = {\n" + "\t\tval map = new HashMap<String, String>()\n" + "\n\n",
+				"\n\t\tmap\n" + "\t}\n\n" +
+			"\toverride ConfigurableCompletionProposal doCreateProposal(String proposal, StyledString displayString, Image image,\n" +
+					"\t\tint replacementOffset, int replacementLength) {\n" + "\n" +
+					"\t\tval cc = new ConfigurableCompletionProposal(proposal, replacementOffset, replacementLength, proposal.length(),\n" +
+					"\t\t\timage, displayString, null, values.get(proposal))\n" + "\t\treturn cc;\n" + "\t}"));
+
+		try {
+			Files.write(Paths.get(outputPath + "xtextFragment.xtend"), Collections.singletonList(xtextcode));
+		}catch(final IOException ex) {
+			ex.printStackTrace();
+		}
 	}
 
 
@@ -119,7 +149,9 @@ public class Activity2MarkDownScenarios {
 						if(!Files.exists(Paths.get(outputPath))) {
 							Files.createDirectories(Paths.get(outputPath));
 						}
-						Files.write(Paths.get(outputPath + namedElt.getName() + ".md"), Collections.singletonList(scen.get()));
+						final String docUnit = scen.get();
+						docs.put(namedElt.getName(), docUnit);
+						Files.write(Paths.get(outputPath + namedElt.getName() + ".md"), Collections.singletonList(docUnit));
 					}catch(final IOException e) {
 						//e.printStackTrace();
 						System.out.println(e.getMessage());
